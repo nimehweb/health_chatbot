@@ -1,0 +1,27 @@
+name,description,body_system
+Fever,High body temperature above 37.5°C,general
+Headache,Pain in the head or upper neck,neurological
+Cough,Expelling air from lungs suddenly,respiratory
+Chest Pain,Pain or discomfort in chest area,cardiovascular
+Shortness of Breath,Difficulty breathing or breathlessness,respiratory
+Nausea,Feeling of sickness with urge to vomit,digestive
+Vomiting,Forceful expulsion of stomach contents,digestive
+Diarrhea,Loose watery stools occurring frequently,digestive
+Fatigue,Extreme tiredness or exhaustion,general
+Dizziness,Feeling lightheaded or unsteady,neurological
+Body Pain,Generalized muscle or body aches,musculoskeletal
+Sore Throat,Pain or irritation in the throat,respiratory
+Runny Nose,Nasal discharge or dripping,respiratory
+Sneezing,Sudden expulsion of air from nose,respiratory
+Chills,Feeling of coldness with shivering,general
+Sweating,Excessive perspiration,general
+Loss of Appetite,Reduced desire to eat,digestive
+Abdominal Pain,Pain in the stomach or belly area,digestive
+Back Pain,Pain in the upper or lower back,musculoskeletal
+Joint Pain,Pain in knees elbows or other joints,musculoskeletal
+Rash,Red irritated or bumpy skin,general
+Itching,Irritating sensation causing desire to scratch,general
+Swelling,Abnormal enlargement of body part,general
+Bleeding,Loss of blood from body,general
+Confusion,Disorientation or unclear thinking,neurological
+Blurred Vision,Unclear or fuzzy eyesight,neurological
