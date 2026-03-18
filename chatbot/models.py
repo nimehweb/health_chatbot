@@ -48,6 +48,11 @@ class ChatSession(models.Model):
     Tracks a single conversation with a user.
     Like a 'case file' that stores the whole interaction.
     """
+    CONVERSATION_STAGES = [
+        ('gathering', 'Gathering information'),
+        ('assessing', 'Assessing symptoms'),
+        ('complete', 'Assessment complete'),
+    ]
     session_id = models.CharField(max_length=100, unique=True, help_text="Unique identifier for this chat session")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -68,6 +73,22 @@ class ChatSession(models.Model):
     
     # Is the assessment complete?
     is_complete = models.BooleanField(default=False)
+
+    # What stage of the conversation are we in?
+    stage = models.CharField(
+        max_length=20,
+        choices=CONVERSATION_STAGES,
+        default='gathering'
+    )
+
+    # Does the bot know how severe the symptoms are?
+    severity_known = models.BooleanField(default=False)
+
+    # Does the bot know how long the symptoms have lasted?
+    duration_known = models.BooleanField(default=False)
+    
+    # Has the bot asked about additional symptoms yet?
+    additional_symptoms_asked = models.BooleanField(default=False)
     
     def __str__(self):
         return f"Session {self.session_id} ({self.created_at.strftime('%Y-%m-%d %H:%M')})"

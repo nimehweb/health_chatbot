@@ -5,8 +5,14 @@ from rest_framework.response import Response
 from .models import ChatSession, ChatMessage, Symptom
 from .serializers import ChatSessionSerializer, SymptomSerializer
 from .services import evaluate_urgency
-from .llm_service import generate_natural_response, generate_followup_question 
-
+from .llm_service import (
+    extract_symptom_info,
+    generate_clarification_request,
+    generate_followup_question,
+    generate_guidance,
+    generate_additional_symptoms_question,
+    match_symptoms_to_database
+)
 
 @api_view(['POST'])
 def start_chat(request):
@@ -32,7 +38,9 @@ def start_chat(request):
 @api_view(['POST'])
 def send_message(request):
     """
-    Send a message to chatbot with LLM-enhanced responses.
+    Main conversation handler.
+    Uses slot-filling approach to gather symptoms, severity and duration
+    before assessing urgency and providing guidance.
     """
     session_id = request.data.get('session_id')
     user_message = request.data.get('message', '').strip()
@@ -51,57 +59,170 @@ def send_message(request):
             status=status.HTTP_404_NOT_FOUND
         )
 
-    # Save user message
+    # If this session is already complete, let the user know
+    if session.stage == 'complete':
+        return Response({
+            'session_id': session_id,
+            'response': "Your assessment is complete. Please start a new chat if you have new symptoms.",
+            'stage': 'complete'
+        })
+
+    # Step 1: Save the user's message to the database
     ChatMessage.objects.create(
         session=session,
         message_type='user',
         content=user_message
     )
 
-    # Match symptoms from database
-    found_symptoms = []
-    user_message_lower = user_message.lower()
+    # Step 2: Build conversation history from all messages in this session
+    # This is what we pass to the LLM so it knows what has already been said
+    all_messages = session.messages.all()
+    conversation_history = [
+        {'type': msg.message_type, 'content': msg.content}
+        for msg in all_messages
+    ]
 
-    for symptom in Symptom.objects.all():
-        if symptom.name.lower() in user_message_lower:
-            found_symptoms.append(symptom)
-            session.reported_symptoms.add(symptom)
+    # Step 3: Extract symptom information from the user's message
+    extracted = extract_symptom_info(conversation_history, user_message)
 
-    # Evaluate urgency using rule engine
-    urgency, guidance = evaluate_urgency(session.reported_symptoms.all())
-    session.current_urgency = urgency
-    session.save()
+    # Step 4: Update the session with whatever we just learned
 
-    # 🔥 NEW: Use LLM to generate natural response
-    if found_symptoms or urgency == 'emergency':
-        # Transform rule-based guidance into natural language
-        response_text = generate_natural_response(
-            symptoms=[s.name for s in found_symptoms],
-            urgency=urgency,
-            guidance=guidance,
-            user_message=user_message
-        )
-    else:
-        # No symptoms found - ask for clarification
-        response_text = generate_followup_question(
-            asked_symptoms=[],
-            user_message=user_message
-        )
+    # Get all symptom names from our database
+    all_db_symptoms = list(Symptom.objects.values_list('name', flat=True))
 
-    # Save bot response
-    ChatMessage.objects.create(
-        session=session,
-        message_type='bot',
-        content=response_text,
-        extracted_symptoms=[s.name for s in found_symptoms]
+
+    # Use LLM to intelligently match extracted symptoms to database
+    matched_symptom_names = match_symptoms_to_database(
+        extracted_symptoms=extracted.get('symptoms', []),
+        database_symptoms=all_db_symptoms
     )
 
-    return Response({
-        'session_id': session_id,
-        'response': response_text,
-        'found_symptoms': [s.name for s in found_symptoms],
-        'current_urgency': urgency
-    })
+    # Add matched symptoms to the session
+    for symptom_name in matched_symptom_names:
+        try:
+            db_symptom = Symptom.objects.get(name=symptom_name)
+            session.reported_symptoms.add(db_symptom)
+        except Symptom.DoesNotExist:
+            pass
+
+    # for symptom_name in extracted.get('symptoms', []):
+    #     # Try to find this symptom in our database (case-insensitive match)
+    #     for db_symptom in Symptom.objects.all():
+    #         if symptom_name.lower() in db_symptom.name.lower() or db_symptom.name.lower() in symptom_name.lower():
+    #             session.reported_symptoms.add(db_symptom)
+
+    # Update severity and duration if we just learned them
+    if extracted.get('severity_found'):
+        session.severity_known = True
+
+    if extracted.get('duration_found'):
+        session.duration_known = True
+
+    session.save()
+
+    # Step 5: Decide what to do next based on what we know
+    slots_complete = (
+        session.reported_symptoms.exists() and
+        session.severity_known and
+        session.duration_known and
+        session.additional_symptoms_asked
+    )
+
+    if not slots_complete:
+        # Work out specifically what is still missing
+        # so we ask in the right order
+        if not session.reported_symptoms.exists():
+            # We don't even know what symptoms they have yet
+            if not extracted.get('symptoms'):
+                # User was too vague - ask them to describe specifically
+                bot_response = generate_clarification_request(
+                    conversation_history=conversation_history,
+                    user_message=user_message
+                )
+            else:
+                # LLM found something but it didn't match our database
+                # Ask a focused follow-up
+                bot_response = generate_followup_question(
+                    conversation_history=conversation_history,
+                    severity_known=session.severity_known,
+                    duration_known=session.duration_known
+                )
+
+        elif not session.severity_known or not session.duration_known:
+            # We have symptoms but still need severity or duration
+            bot_response = generate_followup_question(
+                conversation_history=conversation_history,
+                severity_known=session.severity_known,
+                duration_known=session.duration_known
+            )
+
+        elif not session.additional_symptoms_asked:
+            # We have everything - but we haven't checked for
+            # additional symptoms yet. Ask once before assessing.
+            bot_response = generate_additional_symptoms_question(
+                conversation_history=conversation_history
+            )
+            # Mark that we have now asked this question
+            session.additional_symptoms_asked = True
+            session.save()
+
+        # Save the bot's question
+        ChatMessage.objects.create(
+            session=session,
+            message_type='bot',
+            content=bot_response
+        )
+
+        return Response({
+            'session_id': session_id,
+            'response': bot_response,
+            'stage': 'gathering',
+            'slots': {
+                'symptoms_found': session.reported_symptoms.exists(),
+                'severity_known': session.severity_known,
+                'duration_known': session.duration_known,
+                'additional_symptoms_asked': session.additional_symptoms_asked
+            }
+        })
+
+    else:
+        # All slots are filled - now we can assess and give guidance
+        session.stage = 'assessing'
+        session.save()
+
+        # Run the urgency rule engine
+        urgency, guidance_text = evaluate_urgency(session.reported_symptoms.all())
+        session.current_urgency = urgency
+        session.stage = 'complete'
+        session.is_complete = True
+        session.save()
+
+        # Generate the final empathetic guidance response
+        symptoms_list = [s.name for s in session.reported_symptoms.all()]
+        bot_response = generate_guidance(
+            conversation_history=conversation_history,
+            symptoms=symptoms_list,
+            severity=extracted.get('severity'),
+            duration=extracted.get('duration'),
+            urgency=urgency,
+            guidance_text=guidance_text
+        )
+
+        # Save the bot's guidance
+        ChatMessage.objects.create(
+            session=session,
+            message_type='bot',
+            content=bot_response,
+            extracted_symptoms=symptoms_list
+        )
+
+        return Response({
+            'session_id': session_id,
+            'response': bot_response,
+            'stage': 'complete',
+            'urgency': urgency,
+            'symptoms': symptoms_list
+        })
 
 
 @api_view(['GET'])
