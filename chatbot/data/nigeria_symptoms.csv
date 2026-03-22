@@ -1,0 +1,66 @@
+name,description,body_system
+Abdominal Pain,Patient reports abdominal pain,digestive
+Acidity,Patient reports acidity,digestive
+Back Pain,Patient reports back pain,musculoskeletal
+Belly Pain,Patient reports belly pain,general
+Bladder Discomfort,Patient reports bladder discomfort,general
+Blood in Cough,Patient reports blood in cough,respiratory
+Blurred Vision,Patient reports blurred vision,neurological
+Burning Urination,Patient reports burning urination,general
+Chest Pain,Patient reports chest pain,cardiovascular
+Chills,Patient reports chills,general
+Constipation,Patient reports constipation,general
+Cough,Patient reports cough,respiratory
+Dark Urine,Patient reports dark urine,digestive
+Dehydration,Patient reports dehydration,general
+Depression,Patient reports depression,neurological
+Diarrhea,Patient reports diarrhea,digestive
+Difficulty Concentrating,Patient reports difficulty concentrating,neurological
+Dizziness,Patient reports dizziness,neurological
+Excessive Hunger,Patient reports excessive hunger,general
+Excessive Urination,Patient reports excessive urination,general
+Fatigue,Patient reports fatigue,general
+Foul-smelling Urine,Patient reports foul-smelling urine,general
+Frequent Urination,Patient reports frequent urination,general
+General Malaise,Patient reports general malaise,general
+Headache,Patient reports headache,neurological
+High Fever,Patient reports high fever,general
+Increased Appetite,Patient reports increased appetite,general
+Indigestion,Patient reports indigestion,digestive
+Irregular Blood Sugar,Patient reports irregular blood sugar,general
+Irritability,Patient reports irritability,neurological
+Itching,Patient reports itching,general
+Joint Pain,Patient reports joint pain,musculoskeletal
+Lethargy,Patient reports lethargy,general
+Loss of Appetite,Patient reports loss of appetite,general
+Loss of Balance,Patient reports loss of balance,neurological
+Loss of Smell,Patient reports loss of smell,digestive
+Mild Fever,Patient reports mild fever,general
+Mucus in Cough,Patient reports mucus in cough,respiratory
+Muscle Pain,Patient reports muscle pain,musculoskeletal
+Muscle Weakness,Patient reports muscle weakness,musculoskeletal
+Nasal Congestion,Patient reports nasal congestion,respiratory
+Nausea,Patient reports nausea,digestive
+Pain Behind Eyes,Patient reports pain behind eyes,general
+Phlegm,Patient reports phlegm,respiratory
+Rapid Heartbeat,Patient reports rapid heartbeat,cardiovascular
+Red Eyes,Patient reports red eyes,general
+Red Spots on Body,Patient reports red spots on body,general
+Restlessness,Patient reports restlessness,general
+Runny Nose,Patient reports runny nose,respiratory
+Rusty Coloured Sputum,Patient reports rusty coloured sputum,general
+Shortness of Breath,Patient reports shortness of breath,respiratory
+Sinus Pressure,Patient reports sinus pressure,respiratory
+Skin Rash,Patient reports skin rash,general
+Sneezing,Patient reports sneezing,respiratory
+Sore Throat,Patient reports sore throat,respiratory
+Stiff Neck,Patient reports stiff neck,neurological
+Sunken Eyes,Patient reports sunken eyes,general
+Sweating,Patient reports sweating,general
+Swelling Joints,Patient reports swelling joints,general
+Swollen Lymph Nodes,Patient reports swollen lymph nodes,general
+Vomiting,Patient reports vomiting,digestive
+Weight Loss,Patient reports weight loss,general
+Yellow Urine,Patient reports yellow urine,general
+Yellowing of Eyes,Patient reports yellowing of eyes,digestive
+Yellowing of Skin,Patient reports yellowing of skin,digestive
