@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Symptom, UrgencyRule, ChatSession, ChatMessage
+from .models import Symptom, UrgencyRule, ChatSession, ChatMessage, Disease
 
 @admin.register(Symptom)
 class SymptomAdmin(admin.ModelAdmin):
@@ -27,3 +27,10 @@ class ChatMessageAdmin(admin.ModelAdmin):
     
     def content_preview(self, obj):
         return obj.content[:50] + "..." if len(obj.content) > 50 else obj.content
+
+@admin.register(Disease)
+class DiseaseAdmin(admin.ModelAdmin):
+    list_display = ['name', 'urgency_level']
+    list_filter = ['urgency_level']
+    filter_horizontal = ['symptoms']
+    search_fields = ['name', 'description']

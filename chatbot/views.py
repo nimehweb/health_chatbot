@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import ChatSession, ChatMessage, Symptom
 from .serializers import ChatSessionSerializer, SymptomSerializer
-from .services import evaluate_urgency
+from .services import evaluate_urgency, match_diseases
 from .llm_service import (
     extract_symptom_info,
     generate_clarification_request,
@@ -133,19 +133,19 @@ def send_message(request):
         # so we ask in the right order
         if not session.reported_symptoms.exists():
             # We don't even know what symptoms they have yet
-            if not extracted.get('symptoms'):
-                # User was too vague - ask them to describe specifically
+            if not matched_symptom_names:
+                # Nothing matched - ask for more specific description
                 bot_response = generate_clarification_request(
-                    conversation_history=conversation_history,
-                    user_message=user_message
-                )
+                conversation_history=conversation_history,
+                user_message=user_message
+            )
             else:
-                # LLM found something but it didn't match our database
+                # Something was extracted but session hasn't updated yet
                 # Ask a focused follow-up
                 bot_response = generate_followup_question(
-                    conversation_history=conversation_history,
-                    severity_known=session.severity_known,
-                    duration_known=session.duration_known
+                conversation_history=conversation_history,
+                severity_known=session.severity_known,
+                duration_known=session.duration_known
                 )
 
         elif not session.severity_known or not session.duration_known:
@@ -192,6 +192,10 @@ def send_message(request):
 
         # Run the urgency rule engine
         urgency, guidance_text = evaluate_urgency(session.reported_symptoms.all())
+
+        #Run disease matching
+        probable_diseases = match_diseases(session.reported_symptoms.all())
+
         session.current_urgency = urgency
         session.stage = 'complete'
         session.is_complete = True
@@ -199,13 +203,15 @@ def send_message(request):
 
         # Generate the final empathetic guidance response
         symptoms_list = [s.name for s in session.reported_symptoms.all()]
+
         bot_response = generate_guidance(
             conversation_history=conversation_history,
             symptoms=symptoms_list,
             severity=extracted.get('severity'),
             duration=extracted.get('duration'),
             urgency=urgency,
-            guidance_text=guidance_text
+            guidance_text=guidance_text,
+            probable_diseases=probable_diseases
         )
 
         # Save the bot's guidance
@@ -221,7 +227,8 @@ def send_message(request):
             'response': bot_response,
             'stage': 'complete',
             'urgency': urgency,
-            'symptoms': symptoms_list
+            'symptoms': symptoms_list,
+            'probable_diseases': probable_diseases
         })
 
 
