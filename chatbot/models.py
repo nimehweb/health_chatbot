@@ -116,4 +116,32 @@ class ChatMessage(models.Model):
     
     def __str__(self):
         return f"{self.message_type}: {self.content[:50]}..."
-    
+
+class Disease(models.Model):
+    """
+    Stores diseases with their associated symptoms.
+    Used for probabilistic disease matching after symptom assessment.
+    """
+    name = models.CharField(max_length=200, unique=True)
+    description = models.TextField(blank=True)
+    urgency_level = models.CharField(
+        max_length=20,
+        choices=UrgencyRule.URGENCY_LEVELS,
+        default='moderate'
+    )
+    # Symptoms associated with this disease
+    symptoms = models.ManyToManyField(
+        Symptom,
+        related_name='diseases',
+        blank=True
+    )
+    precautions = models.TextField(
+        blank=True,
+        help_text='Comma-separated list of precautions'
+    )
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name 
