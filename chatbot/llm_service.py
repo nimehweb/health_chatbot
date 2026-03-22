@@ -54,7 +54,8 @@ Rules:
 - severity_found is FALSE if the user only named their symptoms
   without describing how bad they are
 - duration_found is ONLY true if the user mentioned a time period like:
-  hours, days, weeks, since yesterday, since this morning, for 2 days etc- If nothing relevant was found, return empty lists and nulls
+  hours, days, weeks, since yesterday, since this morning, for 2 days etc
+- If nothing relevant was found, return empty lists and nulls
 - Return ONLY the JSON object, no extra text"""
 
     try:
@@ -285,10 +286,13 @@ Rules:
         print(f"Symptom matching error: {e}")
         return []
 
-def generate_guidance(conversation_history, symptoms, severity, duration, urgency, guidance_text):
+def generate_guidance(conversation_history, symptoms, severity,
+                      duration, urgency, guidance_text,
+                      probable_diseases=None):
     """
     Called only when all slots are filled and urgency has been assessed.
     Transforms the clinical guidance into a warm, natural response.
+    Now includes probable disease information for richer guidance.
     """
 
     # Emergency cases get a direct response - no LLM softening needed
@@ -296,7 +300,8 @@ def generate_guidance(conversation_history, symptoms, severity, duration, urgenc
         return (
             f"🚨 This sounds like it needs immediate attention.\n\n"
             f"{guidance_text}\n\n"
-            f"Please do not wait. This is not a diagnosis — seek emergency care now."
+            f"Please do not wait. This is not a diagnosis — "
+            f"seek emergency care now."
         )
 
     history_text = ""
@@ -304,28 +309,47 @@ def generate_guidance(conversation_history, symptoms, severity, duration, urgenc
         role = "User" if msg['type'] == 'user' else "Bot"
         history_text += f"{role}: {msg['content']}\n"
 
-    prompt = f"""You are an empathetic healthcare assistant giving guidance to a patient.
+    # Format probable diseases for the prompt
+    diseases_text = ""
+    if probable_diseases:
+        diseases_text = "\nPROBABLE CONDITIONS (for context only):\n"
+        for d in probable_diseases:
+            diseases_text += (
+                f"- {d['name']} "
+                f"({d['match_percentage']}% symptom match): "
+                f"{d['description']}\n"
+            )
+
+    prompt = f"""You are an empathetic Nigerian healthcare assistant 
+giving guidance to a patient.
 
 CONVERSATION SUMMARY:
 {history_text}
 
 WHAT WE KNOW:
 - Symptoms: {', '.join(symptoms) if symptoms else 'not specified'}
-- Severity: {severity or 'not specified'}  
+- Severity: {severity or 'not specified'}
 - Duration: {duration or 'not specified'}
 - Urgency level: {urgency}
-
+{diseases_text}
 CLINICAL GUIDANCE TO COMMUNICATE:
 {guidance_text}
 
-Rewrite this guidance in a warm, caring, conversational tone.
+Rewrite this guidance in a warm, caring, conversational tone 
+relevant to the Nigerian healthcare context.
+
 Structure your response as:
 1. Brief acknowledgment of what they are going through (1 sentence)
-2. Clear advice on what they should do (2-3 sentences)
-3. What to watch out for (1 sentence)
-4. A reminder that this is not a medical diagnosis (1 sentence)
+2. If probable conditions exist, mention the most likely one 
+   naturally - do not say "85% match", just say 
+   "your symptoms are consistent with..." 
+3. Clear advice on what they should do (2-3 sentences)
+4. One specific thing to watch out for (1 sentence)
+5. A reminder that this is not a medical diagnosis and they 
+   should see a qualified healthcare professional (1 sentence)
 
-Keep it concise and human. Do not add medical facts not in the guidance above."""
+Keep it concise, human and relevant to Nigeria. 
+Do not add medical facts not in the guidance above."""
 
     try:
         client = get_groq_client()
@@ -335,14 +359,23 @@ Keep it concise and human. Do not add medical facts not in the guidance above.""
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
-            max_tokens=350
+            max_tokens=400
         )
         return response.choices[0].message.content.strip()
 
     except Exception as e:
         print(f"Guidance error: {e}")
+        disease_note = ""
+        if probable_diseases:
+            top = probable_diseases[0]
+            disease_note = (
+                f" Your symptoms are most consistent "
+                f"with {top['name']}."
+            )
         return (
-            f"Based on what you've described ({', '.join(symptoms)}), "
+            f"Based on what you've described "
+            f"({', '.join(symptoms)}),{disease_note} "
             f"here is some guidance:\n\n{guidance_text}\n\n"
-            f"Please note this is not a medical diagnosis."
+            f"Please note this is not a medical diagnosis. "
+            f"See a qualified healthcare professional."
         )
