@@ -1,0 +1,33 @@
+SYMPTOMS: fever, chills, headache, sweating, fatigue, nausea, vomiting, muscle aches, diarrhea
+
+OVERVIEW
+Malaria is a life-threatening infectious disease caused by Plasmodium parasites, transmitted through the bite of infected female Anopheles mosquitoes. It remains one of the most significant public health challenges in Nigeria, accounting for a large proportion of global malaria cases and deaths. Nigeria alone contributes about 27% of the global malaria burden, making it the most affected country worldwide [Source: who.int, 2023].
+
+The disease is highly endemic across all regions of Nigeria, with transmission occurring year-round but intensifying during the rainy season. Malaria disproportionately affects children under five and pregnant women, contributing significantly to hospital visits, school absenteeism, and economic strain on families. Despite ongoing control efforts such as insecticide-treated nets and antimalarial programs, malaria continues to be a leading cause of morbidity and mortality in the country [Source: ncdc.gov.ng, 2023].
+
+WHAT TO DO
+If you experience symptoms suggestive of malaria, the first step is to visit a nearby healthcare facility such as a primary health centre, general hospital, or a licensed pharmacy clinic. Request a confirmatory test, preferably a Rapid Diagnostic Test (RDT) or microscopy, as recommended by national guidelines. Self-diagnosis based on symptoms alone is discouraged because other illnesses like typhoid fever can present similarly [Source: health.gov.ng, 2023].
+
+Once diagnosed, begin treatment immediately with an approved Artemisinin-based Combination Therapy (ACT), which is the standard treatment for uncomplicated malaria in Nigeria. Ensure you complete the full dose even if symptoms improve. Pregnant women and children should receive care tailored to their condition at accredited facilities. If access is limited, community health workers under government programs may also provide testing and treatment services.
+
+WARNING SIGNS
+Seek emergency medical care immediately if you notice severe symptoms such as persistent vomiting, inability to drink or eat, convulsions (seizures), confusion or altered consciousness, difficulty breathing, severe weakness, or yellowing of the eyes (jaundice). These may indicate severe malaria, which can rapidly become fatal if untreated [Source: who.int, 2023].
+
+In children, additional danger signs include inability to sit, stand, or breastfeed, as well as unusually high fever. In pregnant women, severe anemia or reduced fetal movement should also prompt urgent medical attention.
+
+SELF CARE WHILE SEEKING HELP
+While arranging to see a healthcare provider, you can take steps to manage symptoms safely. Stay hydrated by drinking clean water, oral rehydration solution, or light fluids like pap. Rest in a cool, well-ventilated environment and use paracetamol to reduce fever if available and appropriate. Avoid exposure to mosquito bites by sleeping under an insecticide-treated net, even during the day if resting [Source: ncdc.gov.ng, 2023].
+
+If possible, ensure someone accompanies you to the hospital, especially if symptoms are worsening. Keep a record of when symptoms started and any medications already taken to inform the healthcare provider.
+
+WHAT NOT TO DO
+Do not self-medicate with antimalarial drugs without confirming the diagnosis, as misuse contributes to drug resistance and may delay proper treatment. Avoid relying solely on herbal remedies or traditional treatments, as these are not scientifically proven to cure malaria and may worsen the condition.
+
+Do not ignore persistent fever or assume it will resolve on its own, especially in children. Also, avoid incomplete treatment courses, which can lead to recurrence and complications. Purchasing drugs from unlicensed vendors is another common risk that should be avoided.
+
+NIGERIAN CONTEXT
+Malaria transmission in Nigeria peaks during the rainy season (typically April to October), when mosquito breeding increases due to stagnant water. Both rural and urban areas are affected, though rural communities often experience higher transmission due to limited access to preventive measures [Source: health.gov.ng, 2023].
+
+The Nigerian government, through the National Malaria Elimination Programme (NMEP), distributes free or subsidized insecticide-treated nets and supports access to diagnosis and treatment in public health facilities. Pregnant women may receive intermittent preventive treatment (IPTp) during antenatal visits. The National Health Insurance Authority (NHIA) can also help reduce treatment costs for enrolled individuals.
+
+For public health information or emergencies, the Nigeria Centre for Disease Control (NCDC) can be reached via its toll-free hotline (6232), which provides guidance on infectious diseases including malaria [Source: ncdc.gov.ng, 2023].

@@ -1,0 +1,33 @@
+SYMPTOMS: fatigue, loss of appetite, nausea, vomiting, abdominal pain, dark urine, pale stool, jaundice (yellowing of eyes and skin), joint pain
+
+OVERVIEW
+Hepatitis B is a viral infection caused by the hepatitis B virus (HBV) that primarily affects the liver and can lead to both acute and chronic disease. It is transmitted through contact with infected blood or body fluids, including from mother to child during childbirth, unprotected sexual contact, and the use of contaminated needles or sharp instruments. Many infected individuals may not show symptoms initially, which contributes to silent transmission within communities [Source: who.int, 2023].
+
+Nigeria has a high burden of hepatitis B, with an estimated prevalence of about 8–12% in the general population, making it a major public health concern. Millions of Nigerians are living with chronic hepatitis B, which can progress to liver cirrhosis or liver cancer if untreated. The disease remains underdiagnosed due to low awareness and limited routine screening, especially in rural areas [Source: ncdc.gov.ng, 2023]. Its impact on long-term health and healthcare costs makes early detection and prevention critical.
+
+WHAT TO DO
+If you experience symptoms suggestive of hepatitis B or believe you may have been exposed, visit a healthcare facility for testing. Ask specifically for a hepatitis B surface antigen (HBsAg) test, which is commonly used in Nigeria to confirm infection. Additional tests such as liver function tests and viral load assessments may be recommended to determine the severity of the disease [Source: health.gov.ng, 2023].
+
+If diagnosed, follow your healthcare provider’s guidance carefully. Not all cases require immediate antiviral treatment, but regular monitoring is essential. For those who need treatment, antiviral medications such as tenofovir may be prescribed. It is also important to get close contacts tested and vaccinated if they are not already protected. Pregnant women should ensure screening during antenatal care to prevent transmission to the baby.
+
+WARNING SIGNS
+Seek urgent medical attention if you develop severe abdominal swelling, persistent vomiting, confusion, or extreme weakness, as these may indicate advanced liver disease. Other danger signs include significant yellowing of the eyes and skin, bleeding easily, or passing black or bloody stools, which may suggest liver failure or complications such as cirrhosis [Source: who.int, 2023].
+
+Sudden worsening of symptoms, including severe fatigue or altered mental state, may indicate acute liver failure, which is a medical emergency requiring immediate hospital care.
+
+SELF CARE WHILE SEEKING HELP
+While arranging to see a healthcare provider, prioritize rest and maintain a balanced diet with easily digestible foods such as rice, fruits, and vegetables. Drink plenty of clean water to stay hydrated. Avoid alcohol completely, as it can worsen liver damage.
+
+Maintain good hygiene practices and avoid sharing personal items like toothbrushes, razors, or nail clippers to reduce the risk of spreading the virus to others. If you have open wounds, ensure they are properly covered.
+
+WHAT NOT TO DO
+Do not ignore symptoms or assume they will resolve on their own, especially since hepatitis B can become chronic without obvious signs. Avoid self-medication with herbal mixtures or unverified remedies, which may further damage the liver.
+
+Do not engage in behaviors that can transmit the virus, such as unprotected sex or sharing sharp objects. Also, avoid stopping prescribed medications without consulting a healthcare provider, as this can worsen the condition.
+
+NIGERIAN CONTEXT
+Hepatitis B is widespread across Nigeria, with higher prevalence in both urban and rural populations due to factors such as low vaccination coverage in the past and limited awareness. The Nigerian government includes the hepatitis B vaccine in the National Programme on Immunization, with the first dose recommended at birth to prevent mother-to-child transmission [Source: health.gov.ng, 2023].
+
+Screening is increasingly encouraged in antenatal clinics and during routine medical check-ups. Some public health programs and NGOs offer free or subsidized testing and vaccination campaigns. The Nigeria Centre for Disease Control (NCDC) also provides public health guidance and can be reached via its toll-free number (6232) for more information.
+
+Access to treatment is improving, but costs can still be a barrier for many patients. The National Health Insurance Authority (NHIA) may help reduce some of these costs for enrolled individuals, while ongoing national strategies aim to reduce hepatitis-related deaths.
