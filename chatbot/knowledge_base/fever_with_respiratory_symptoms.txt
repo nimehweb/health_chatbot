@@ -1,0 +1,23 @@
+SYMPTOMS: fever, cough, sore throat, nasal congestion, runny nose
+
+OVERVIEW
+Fever with respiratory symptoms can indicate viral or bacterial infections; evaluate for breathing difficulty.
+
+WHAT TO DO
+- Monitor breathing and temperature; seek care if shortness of breath or worsening symptoms.
+- Request appropriate tests where available (e.g., RDTs, chest assessment).
+
+WARNING SIGNS
+- Rapid breathing, persistent chest pain, blue lips/face, severe wheeze.
+
+SELF CARE WHILE SEEKING HELP
+- Rest, hydrate, use paracetamol for fever, isolate if contagious respiratory illness suspected.
+
+WHAT NOT TO DO
+- Avoid giving cough syrups to very young children without medical advice.
+
+NIGERIAN CONTEXT
+- Local clinic referral, when to visit emergency department, community health workers.
+
+REFERENCES
+- NCDC, WHO

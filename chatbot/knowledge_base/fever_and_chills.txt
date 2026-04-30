@@ -1,0 +1,23 @@
+SYMPTOMS: fever, chills, sweating, body aches, elevated temperature
+
+OVERVIEW
+Brief description of fever and chills as a symptom complex and common causes in Nigeria.
+
+WHAT TO DO
+- Seek care if fever is high (>39°C) or persistent beyond 48 hours.
+- Get tested where available (malaria RDT, COVID/other tests as appropriate).
+
+WARNING SIGNS
+- Confusion, inability to drink, seizures, difficulty breathing, persistent vomiting.
+
+SELF CARE WHILE SEEKING HELP
+- Stay hydrated, rest, use paracetamol as advised, avoid aspirin in children.
+
+WHAT NOT TO DO
+- Do not give antibiotics without prescription; avoid unverified traditional remedies.
+
+NIGERIAN CONTEXT
+- Where to seek care (primary health centre, pharmacy clinics, NCDC resources).
+
+REFERENCES
+- NCDC, WHO Nigeria
