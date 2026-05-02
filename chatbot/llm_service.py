@@ -24,7 +24,6 @@ def extract_symptom_info(conversation_history, user_message):
     }
     """
 
-    # We format the conversation history into a readable string for the LLM
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
@@ -65,7 +64,7 @@ Rules:
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.1,  # Low temperature = more consistent, predictable output
+            temperature=0.1,
             max_tokens=200
         )
 
@@ -75,7 +74,6 @@ Rules:
 
     except Exception as e:
         print(f"Extraction error: {e}")
-        # Safe fallback - return empty data so the conversation can continue
         return {
             "symptoms": [],
             "severity": None,
@@ -142,7 +140,6 @@ def generate_followup_question(conversation_history, severity_known, duration_kn
         role = "User" if msg['type'] == 'user' else "Bot"
         history_text += f"{role}: {msg['content']}\n"
 
-    # Determine exactly what is missing and what to ask
     if not severity_known and not duration_known:
         what_to_ask = "how severe their symptoms are on a scale of mild, moderate, or severe"
     elif not severity_known:
@@ -226,19 +223,11 @@ def match_symptoms_to_database(extracted_symptoms, database_symptoms):
     """
     Uses the LLM to intelligently match what the user described
     against our database symptom list.
-
-    For example:
-    - "feverish" matches "Fever"
-    - "migraine" matches "Headache"
-    - "throwing up" matches "Vomiting"
-
-    Returns a list of database symptom names that match.
     """
 
     if not extracted_symptoms:
         return []
 
-    # Format the database symptoms as a simple list for the LLM
     db_symptoms_text = ", ".join(database_symptoms)
 
     prompt = f"""You are a medical terminology matcher.
@@ -272,13 +261,8 @@ Rules:
 
         import json
         raw = response.choices[0].message.content.strip()
-
-        # Sometimes the LLM wraps it in ```json ... ``` so we clean that
         raw = raw.replace("```json", "").replace("```", "").strip()
-
         matched = json.loads(raw)
-
-        # Make sure we only return things actually in our database
         valid_matches = [s for s in matched if s in database_symptoms]
         return valid_matches
 
@@ -286,16 +270,20 @@ Rules:
         print(f"Symptom matching error: {e}")
         return []
 
+
 def generate_guidance(conversation_history, symptoms, severity,
                       duration, urgency, guidance_text,
                       probable_diseases=None):
     """
     Called only when all slots are filled and urgency has been assessed.
     Transforms the clinical guidance into a warm, natural response.
-    Now includes probable disease information for richer guidance.
+
+    Now uses RAG to retrieve symptom-specific knowledge base articles,
+    giving the LLM grounded, evidence-based context to work from instead
+    of relying purely on its training data.
     """
 
-    # Emergency cases get a direct response - no LLM softening needed
+    # Emergency cases get a direct response - no softening needed
     if urgency == 'emergency':
         return (
             f"🚨 This sounds like it needs immediate attention.\n\n"
@@ -304,12 +292,27 @@ def generate_guidance(conversation_history, symptoms, severity,
             f"seek emergency care now."
         )
 
+    # ── RAG: retrieve relevant knowledge base articles ────────────
+    # Build a search query from the user's symptoms so we find the
+    # most relevant symptom-guidance articles (not disease articles).
+    rag_context = ""
+    if symptoms:
+        try:
+            from chatbot.rag_service import retrieve_context
+            symptom_query = ", ".join(symptoms)
+            rag_context = retrieve_context(symptom_query, n_results=2)
+        except Exception as e:
+            # Never let a RAG failure break the guidance flow
+            print(f"[RAG] Could not retrieve context: {e}")
+            rag_context = ""
+
+    # ─────────────────────────────────────────────────────────────
+
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
         history_text += f"{role}: {msg['content']}\n"
 
-    # Format probable diseases for the prompt
     diseases_text = ""
     if probable_diseases:
         diseases_text = "\nPROBABLE CONDITIONS (for context only):\n"
@@ -319,6 +322,14 @@ def generate_guidance(conversation_history, symptoms, severity,
                 f"({d['match_percentage']}% symptom match): "
                 f"{d['description']}\n"
             )
+
+    # Only include the RAG block in the prompt when we actually got something
+    rag_section = ""
+    if rag_context:
+        rag_section = f"""
+SYMPTOM KNOWLEDGE BASE (use this to enrich your guidance):
+{rag_context}
+"""
 
     prompt = f"""You are an empathetic Nigerian healthcare assistant 
 giving guidance to a patient.
@@ -331,7 +342,7 @@ WHAT WE KNOW:
 - Severity: {severity or 'not specified'}
 - Duration: {duration or 'not specified'}
 - Urgency level: {urgency}
-{diseases_text}
+{diseases_text}{rag_section}
 CLINICAL GUIDANCE TO COMMUNICATE:
 {guidance_text}
 
@@ -341,15 +352,19 @@ relevant to the Nigerian healthcare context.
 Structure your response as:
 1. Brief acknowledgment of what they are going through (1 sentence)
 2. If probable conditions exist, mention the most likely one 
-   naturally - do not say "85% match", just say 
+   naturally — do not say "85% match", just say 
    "your symptoms are consistent with..." 
-3. Clear advice on what they should do (2-3 sentences)
-4. One specific thing to watch out for (1 sentence)
+3. Clear advice on what they should do (2-3 sentences).
+   Where the knowledge base above contains relevant self-care tips
+   (warning signs to watch for, what NOT to do, hydration advice etc.),
+   weave ONE or TWO of those practical points naturally into your advice.
+4. One specific warning sign to watch out for (1 sentence)
 5. A reminder that this is not a medical diagnosis and they 
    should see a qualified healthcare professional (1 sentence)
 
 Keep it concise, human and relevant to Nigeria. 
-Do not add medical facts not in the guidance above."""
+Do not copy large chunks from the knowledge base — paraphrase naturally.
+Do not add medical facts not supported by the guidance or knowledge base above."""
 
     try:
         client = get_groq_client()
@@ -359,7 +374,7 @@ Do not add medical facts not in the guidance above."""
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
-            max_tokens=400
+            max_tokens=450
         )
         return response.choices[0].message.content.strip()
 
