@@ -6,7 +6,22 @@ from chatbot.models import Symptom, UrgencyRule, Disease
 class Command(BaseCommand):
     help = 'Load Nigerian health data from CSV files'
 
+    def add_arguments(self, parser):
+        parser.add_argument(
+            '--reset',
+            action='store_true',
+            help='Delete all existing urgency rules before reloading from CSV'
+        )
+
     def handle(self, *args, **kwargs):
+        reset = kwargs.get('reset', False)
+        
+        if reset:
+            deleted_count, _ = UrgencyRule.objects.all().delete()
+            self.stdout.write(self.style.WARNING(
+                f'Deleted {deleted_count} existing urgency rules'
+            ))
+        
         self.load_symptoms()
         self.load_diseases()
         self.load_urgency_rules()

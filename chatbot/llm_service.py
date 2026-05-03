@@ -9,6 +9,26 @@ def get_groq_client():
     return Groq(api_key=api_key)
 
 
+def _is_connection_error(e):
+    """
+    Returns True if the exception is a network/connection error.
+    Covers Groq client errors and general network failures.
+    """
+    error_str = str(e).lower()
+    connection_keywords = [
+        'connection error', 'connection timeout', 'getaddrinfo',
+        'network', 'timeout', 'remotedisconnected', 'connectionreset',
+        'connexion', 'unreachable', 'socket', 'ssl'
+    ]
+    return any(keyword in error_str for keyword in connection_keywords)
+
+
+CONNECTION_ERROR_MESSAGE = (
+    "⚠️ I'm having trouble connecting right now. "
+    "Please check your internet connection and try again."
+)
+
+
 def extract_symptom_info(conversation_history, user_message):
     """
     Reads the user's latest message and the full conversation history,
@@ -17,13 +37,13 @@ def extract_symptom_info(conversation_history, user_message):
     Returns a dictionary like:
     {
         "symptoms": ["headache", "fever"],
-        "severity": "moderate",       <- or None if not mentioned
-        "duration": "2 days",         <- or None if not mentioned
+        "severity": "moderate",
+        "duration": "2 days",
         "severity_found": True,
-        "duration_found": False
+        "duration_found": False,
+        "connection_error": False
     }
     """
-
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
@@ -61,9 +81,7 @@ Rules:
         client = get_groq_client()
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
+            messages=[{"role": "user", "content": prompt}],
             temperature=0.1,
             max_tokens=200
         )
@@ -79,15 +97,16 @@ Rules:
             "severity": None,
             "duration": None,
             "severity_found": False,
-            "duration_found": False
+            "duration_found": False,
+            "connection_error": _is_connection_error(e)
         }
+
 
 def generate_clarification_request(conversation_history, user_message):
     """
     Called when the user's message is too vague to extract any symptoms.
     Asks them to describe what they are specifically experiencing.
     """
-
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
@@ -127,22 +146,26 @@ Rules:
 
     except Exception as e:
         print(f"Clarification error: {e}")
-        return "I'm sorry to hear you're not feeling well. Could you describe what you're specifically experiencing — for example, do you have any pain, fever, or other symptoms?"
+        if _is_connection_error(e):
+            return CONNECTION_ERROR_MESSAGE
+        return (
+            "I'm sorry to hear you're not feeling well. "
+            "Could you describe what you're specifically experiencing — "
+            "for example, do you have any pain, fever, or other symptoms?"
+        )
 
-def generate_followup_question(conversation_history, severity_known, duration_known):
+
+def generate_followup_question(conversation_history, severity_known,
+                               duration_known):
     """
     Generates a focused follow-up question based on exactly what is missing.
-    Asks in a specific order: symptoms first, then severity, then duration.
     """
-
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
         history_text += f"{role}: {msg['content']}\n"
 
-    if not severity_known and not duration_known:
-        what_to_ask = "how severe their symptoms are on a scale of mild, moderate, or severe"
-    elif not severity_known:
+    if not severity_known:
         what_to_ask = "how severe their symptoms are on a scale of mild, moderate, or severe"
     elif not duration_known:
         what_to_ask = "how long they have been experiencing these symptoms"
@@ -177,9 +200,12 @@ Rules:
 
     except Exception as e:
         print(f"Followup error: {e}")
+        if _is_connection_error(e):
+            return CONNECTION_ERROR_MESSAGE
         if not severity_known:
             return "Could you describe how severe your symptoms feel — mild, moderate, or quite severe?"
         return "How long have you been experiencing these symptoms?"
+
 
 def generate_additional_symptoms_question(conversation_history):
     """
@@ -217,14 +243,22 @@ symptoms you should know about before giving guidance.
 
     except Exception as e:
         print(f"Additional symptoms question error: {e}")
-        return "Before I give you guidance, is there anything else you are experiencing that I should know about?"
+        if _is_connection_error(e):
+            return CONNECTION_ERROR_MESSAGE
+        return (
+            "Before I give you guidance, is there anything else "
+            "you are experiencing that I should know about?"
+        )
+
 
 def match_symptoms_to_database(extracted_symptoms, database_symptoms):
     """
     Uses the LLM to intelligently match what the user described
     against our database symptom list.
-    """
 
+    Falls back to simple string matching on connection errors so the
+    conversation can still continue without the LLM.
+    """
     if not extracted_symptoms:
         return []
 
@@ -268,7 +302,15 @@ Rules:
 
     except Exception as e:
         print(f"Symptom matching error: {e}")
-        return []
+        # On connection error fall back to simple string matching
+        # so symptoms still get recorded even without the LLM
+        fallback = []
+        for extracted in extracted_symptoms:
+            for db_sym in database_symptoms:
+                if extracted.lower() in db_sym.lower() or \
+                   db_sym.lower() in extracted.lower():
+                    fallback.append(db_sym)
+        return list(set(fallback))
 
 
 def generate_guidance(conversation_history, symptoms, severity,
@@ -278,23 +320,22 @@ def generate_guidance(conversation_history, symptoms, severity,
     Called only when all slots are filled and urgency has been assessed.
     Transforms the clinical guidance into a warm, natural response.
 
-    Now uses RAG to retrieve symptom-specific knowledge base articles,
-    giving the LLM grounded, evidence-based context to work from instead
-    of relying purely on its training data.
+    NOTE: probable_diseases is accepted but intentionally NOT used in
+    the response. This is a symptoms guidance system, not a diagnosis
+    tool. Mentioning disease names confuses users and causes unnecessary
+    fear when the matching may be wrong.
     """
 
-    # Emergency cases get a direct response - no softening needed
+    # Emergency cases get a direct response — no softening needed
     if urgency == 'emergency':
         return (
-            f"🚨 This sounds like it needs immediate attention.\n\n"
+            "🚨 This sounds like it needs immediate attention.\n\n"
             f"{guidance_text}\n\n"
-            f"Please do not wait. This is not a diagnosis — "
-            f"seek emergency care now."
+            "Please do not wait. This is not a diagnosis — "
+            "seek emergency care now."
         )
 
     # ── RAG: retrieve relevant knowledge base articles ────────────
-    # Build a search query from the user's symptoms so we find the
-    # most relevant symptom-guidance articles (not disease articles).
     rag_context = ""
     if symptoms:
         try:
@@ -302,28 +343,14 @@ def generate_guidance(conversation_history, symptoms, severity,
             symptom_query = ", ".join(symptoms)
             rag_context = retrieve_context(symptom_query, n_results=2)
         except Exception as e:
-            # Never let a RAG failure break the guidance flow
             print(f"[RAG] Could not retrieve context: {e}")
             rag_context = ""
-
-    # ─────────────────────────────────────────────────────────────
 
     history_text = ""
     for msg in conversation_history:
         role = "User" if msg['type'] == 'user' else "Bot"
         history_text += f"{role}: {msg['content']}\n"
 
-    diseases_text = ""
-    if probable_diseases:
-        diseases_text = "\nPROBABLE CONDITIONS (for context only):\n"
-        for d in probable_diseases:
-            diseases_text += (
-                f"- {d['name']} "
-                f"({d['match_percentage']}% symptom match): "
-                f"{d['description']}\n"
-            )
-
-    # Only include the RAG block in the prompt when we actually got something
     rag_section = ""
     if rag_context:
         rag_section = f"""
@@ -332,7 +359,7 @@ SYMPTOM KNOWLEDGE BASE (use this to enrich your guidance):
 """
 
     prompt = f"""You are an empathetic Nigerian healthcare assistant 
-giving guidance to a patient.
+giving guidance to a patient about their symptoms.
 
 CONVERSATION SUMMARY:
 {history_text}
@@ -342,37 +369,34 @@ WHAT WE KNOW:
 - Severity: {severity or 'not specified'}
 - Duration: {duration or 'not specified'}
 - Urgency level: {urgency}
-{diseases_text}{rag_section}
+{rag_section}
 CLINICAL GUIDANCE TO COMMUNICATE:
 {guidance_text}
 
 Rewrite this guidance in a warm, caring, conversational tone 
 relevant to the Nigerian healthcare context.
 
+VERY IMPORTANT RULES:
+- Do NOT mention any disease names or medical conditions
+- Do NOT say "your symptoms are consistent with [anything]"
+- Do NOT attempt to diagnose — focus only on what to DO
+- Where the knowledge base has relevant self-care tips or warning
+  signs, weave ONE or TWO points in naturally
+
 Structure your response as:
 1. Brief acknowledgment of what they are going through (1 sentence)
-2. If probable conditions exist, mention the most likely one 
-   naturally — do not say "85% match", just say 
-   "your symptoms are consistent with..." 
-3. Clear advice on what they should do (2-3 sentences).
-   Where the knowledge base above contains relevant self-care tips
-   (warning signs to watch for, what NOT to do, hydration advice etc.),
-   weave ONE or TWO of those practical points naturally into your advice.
-4. One specific warning sign to watch out for (1 sentence)
-5. A reminder that this is not a medical diagnosis and they 
+2. Clear advice on what they should do next (2-3 sentences)
+3. One specific warning sign to watch out for (1 sentence)
+4. A reminder that this is not a medical diagnosis and they 
    should see a qualified healthcare professional (1 sentence)
 
-Keep it concise, human and relevant to Nigeria. 
-Do not copy large chunks from the knowledge base — paraphrase naturally.
-Do not add medical facts not supported by the guidance or knowledge base above."""
+Keep it concise, warm and relevant to Nigeria."""
 
     try:
         client = get_groq_client()
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
+            messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=450
         )
@@ -380,17 +404,11 @@ Do not add medical facts not supported by the guidance or knowledge base above."
 
     except Exception as e:
         print(f"Guidance error: {e}")
-        disease_note = ""
-        if probable_diseases:
-            top = probable_diseases[0]
-            disease_note = (
-                f" Your symptoms are most consistent "
-                f"with {top['name']}."
-            )
+        if _is_connection_error(e):
+            return CONNECTION_ERROR_MESSAGE
         return (
-            f"Based on what you've described "
-            f"({', '.join(symptoms)}),{disease_note} "
+            f"Based on your symptoms ({', '.join(symptoms)}), "
             f"here is some guidance:\n\n{guidance_text}\n\n"
-            f"Please note this is not a medical diagnosis. "
-            f"See a qualified healthcare professional."
+            "Please note this is not a medical diagnosis. "
+            "See a qualified healthcare professional."
         )
