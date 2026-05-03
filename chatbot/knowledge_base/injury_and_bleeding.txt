@@ -1,22 +1,60 @@
-SYMPTOMS: heavy bleeding, deep wounds, loss of consciousness, fractures
+SYMPTOMS: heavy bleeding, deep cuts or lacerations, loss of consciousness, fractures, trauma, difficulty breathing after injury, blunt force injury to abdomen or chest
 
-OVERVIEW
-Major injuries and uncontrolled bleeding require immediate emergency care and first aid.
-
-WHAT TO DO
-- Apply direct pressure to bleeding, call emergency services, and seek trauma-capable facility.
-
-WARNING SIGNS
-- Uncontrolled bleeding, altered consciousness, severe deformity, pale clammy skin.
-
-SELF CARE WHILE SEEKING HELP
-- Apply pressure, immobilize limbs, keep person warm.
+IMMEDIATE FIRST AID FOR BLEEDING
+- Stop the bleeding: Apply direct, continuous pressure to the wound using a clean cloth or bandage. Do not remove the cloth; if blood soaks through, add another layer on top. Keep pressure for 5–10 minutes or until bleeding stops.
+- Elevate the injured area: If possible (and if no fracture is suspected), raise the bleeding area above the level of the heart. This reduces bleeding.
+- Do not remove embedded objects: If a deep object (glass, metal, knife) is embedded in the wound, do not remove it. Removal can cause severe bleeding. Leave it in place and seek emergency care immediately while preventing the object from moving.
+- After bleeding stops: Clean around (not in) the wound with clean water. Cover with a clean bandage or cloth.
+- Do not apply a tourniquet unless you are trained and bleeding is life-threatening (e.g., severe limb bleeding that does not stop with pressure). If a tourniquet is applied, write the time on it so medical staff know how long it has been applied.
+- Immobilize the injured area: If fracture is suspected, keep the injured limb still to prevent further damage.
+- Elevate: Keep the injured limb elevated if possible.
+- Apply ice (if available): Wrapped ice or a cold cloth reduces swelling and pain; apply for 15–20 minutes, then remove for 20 minutes. Repeat as needed. Do not apply ice directly to skin.
+- Give paracetamol for pain if the person is conscious and can swallow.
 
 WHAT NOT TO DO
-- Do not remove deeply embedded objects; do not use tourniquets unless trained.
+- Do not remove deeply embedded objects from a wound; this causes severe bleeding and further injury.
+- Do not apply tourniquets without proper training unless it is a life-threatening limb bleed; improper tourniquet use can damage nerves and blood vessels.
+- Do not use dirty cloths or non-sterile materials for open wounds (risk of infection).
+- Do not delay seeking emergency care for heavy bleeding, deep wounds, or trauma; every minute counts.
+- Do not move a person with suspected spine injury (neck or back); movement can cause paralysis.
+- Do not give food or water to an unconscious person (risk of choking).
+- Do not apply tight bandages that cut off circulation; the limb below the bandage should remain warm, pink, and have normal sensation.
+- Do not ignore loss of consciousness or altered mental status; this is a medical emergency.
+- Do not diagnose fractures yourself; assume any injury with severe pain, deformity, or inability to move might be a fracture and immobilize it.
 
-NIGERIAN CONTEXT
-- Emergency numbers and trauma centres.
+OBSERVATION GUIDE: SEEK EMERGENCY CARE IMMEDIATELY IF
+- Heavy bleeding that does not stop after 10 minutes of direct pressure.
+- Deep cuts, lacerations, or penetrating wounds.
+- Loss of consciousness or altered mental status (confusion, drowsiness).
+- Severe deformity suggesting fracture (limb at an unnatural angle).
+- Inability to move a limb after injury (possible nerve damage or fracture).
+- Pale, clammy, cold skin; rapid weak pulse; dizziness or fainting (signs of shock from blood loss).
+- Difficulty breathing after chest or abdominal injury.
+- Coughing up blood or bleeding from mouth, nose, or ears (suggests internal bleeding).
+- Inability to pass urine or stool after abdominal/pelvic injury (possible internal injury).
+- Any head injury with loss of consciousness, confusion, vomiting, or severe headache.
+- Abdominal or chest trauma with severe pain or difficulty breathing.
+- Injuries from high-force mechanism (motor vehicle crash, fall from height, assault with weapon): treat as potentially serious even if the person feels okay (internal injuries can be hidden).
 
-REFERENCES
-- Basic trauma life support guidance
+IMPORTANT: CALL EMERGENCY SERVICES IMMEDIATELY
+- Do not wait; arrange urgent transport to a hospital with trauma capability.
+- If emergency services (ambulance) are available, call them rather than arranging private transport (paramedics can provide care en route).
+- While awaiting transport: keep the person calm and still, manage bleeding with pressure, monitor breathing and consciousness, and be ready to perform CPR if needed (if trained).
+
+For minor cuts and scrapes:
+- Clean with water, apply antibiotic ointment (if available), cover with clean bandage.
+- Change bandage daily until wound is closed.
+- Seek care if signs of infection develop: increasing redness, warmth, pus, or spreading redness.
+
+For minor fractures or sprains (suspected but not confirmed):
+- Rest, Ice, Compression, Elevation (RICE): Rest the area, apply ice for 15–20 minutes several times daily, wrap with a clean cloth (not too tight), and elevate above heart.
+- Seek care within 24–48 hours for X-ray and confirmation.
+- Do not assume a fracture is "just a sprain"; medical imaging confirms diagnosis.
+
+NIGERIAN CONTEXTUAL TIPS
+- In case of major injury, know where the nearest hospital trauma centre is located: Teaching Hospital Emergency Departments, general hospitals in major cities, or private hospitals with trauma capability.
+- If ambulance services are limited in your area, arrange transport immediately to the nearest facility with emergency and surgical capability.
+- Emergency calls in Nigeria: Call 112 (emergency), 911 (where available), or the local police/ambulance number.
+- Keep a first aid kit at home with sterile gauze, bandages, clean cloth, antiseptic solution (if available), and paracetamol.
+- In communities with limited medical access, focus on stopping bleeding, immobilizing injured limbs, and preventing infection until transport to a hospital is arranged.
+- Tetanus vaccination is important after any injury; if vaccinated more than 10 years ago, a booster is recommended.

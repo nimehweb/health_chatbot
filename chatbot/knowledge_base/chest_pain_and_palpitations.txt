@@ -1,23 +1,35 @@
 SYMPTOMS: chest pain, chest tightness, palpitations, shortness of breath
 
-OVERVIEW
-Chest pain can be cardiac, respiratory, gastrointestinal or musculoskeletal; treat as potentially serious.
-
-WHAT TO DO
-- Seek immediate emergency care if chest pain is severe, sudden, or accompanied by breathlessness.
-- Call emergency services or go to the nearest hospital.
-
-WARNING SIGNS
-- Collapse, sweating, radiating arm/jaw pain, fainting, severe breathlessness.
-
-SELF CARE WHILE SEEKING HELP
-- Stop activity, sit or lie comfortably, do not drive yourself if possible.
+IMMEDIATE COMFORT MEASURES
+- Stop all activity immediately. Do not continue exercising, working, or stressing.
+- Sit or lie down in a comfortable position, preferably semi-upright.
+- If the pain is mild and accompanied by obvious anxiety, breathing slowly and deeply may help.
+- Loosen tight clothing.
+- Do not delay; arrange transport to hospital immediately if the pain is severe or unfamiliar.
 
 WHAT NOT TO DO
-- Do not ignore severe chest pain; do not self-prescribe heart medications without evaluation.
+- Do not self-diagnose or assume chest pain is "just stress" without medical evaluation.
+- Do not take medications prescribed for others.
+- Do not engage in any exertion or movement until evaluated.
+- Do not ignore palpitations with shortness of breath, dizziness, or chest pain.
+- Do not drive yourself if chest pain is moderate to severe.
 
-NIGERIAN CONTEXT
-- Emergency numbers, nearest tertiary hospitals with cardiology services.
+OBSERVATION GUIDE: WATCH FOR THESE CHANGES
+ANY OF THE FOLLOWING REQUIRES IMMEDIATE EMERGENCY CARE:
+- Sudden severe chest pain (worst pain ever experienced).
+- Chest pain radiating to arms, jaw, neck, or back.
+- Chest pain with shortness of breath, fainting, or loss of consciousness.
+- Chest pain with sweating, nausea, or vomiting.
+- Palpitations with dizziness, fainting, or difficulty breathing.
+- Rapid pulse (>120 beats per minute) lasting more than a few minutes.
+- Chest pain with blue lips or face.
+Do not wait; call emergency services or go to the nearest hospital immediately.
+
+NIGERIAN CONTEXTUAL TIPS
+- Major hospitals in Nigeria (Bajaj, Lagos State Teaching Hospital, National Hospital Abuja) have cardiology services and emergency departments.
+- If in a remote area, arrange urgent transport while providing basic comfort.
+- Palpitations can be caused by caffeine, stress, or dehydration; avoid strenuous activity until evaluated.
 
 REFERENCES
-- WHO, local cardiac care guidelines
+- WHO (Acute coronary syndrome and cardiac emergencies)
+- CDC (Heart attack warning signs and first aid)

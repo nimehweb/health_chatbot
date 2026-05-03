@@ -1,23 +1,62 @@
-SYMPTOMS: headache, migraine, dizziness, weakness, numbness, confusion
+SYMPTOMS: headache, migraine, dizziness, weakness on one side of body, numbness, difficulty speaking, confusion, vision changes, facial drooping
 
-OVERVIEW
-Headache patterns vary from tension and migraine to signs of neurologic emergencies.
-
-WHAT TO DO
-- If a new severe (“worst ever”) headache, sudden onset, or neurological signs, seek emergency care.
-- For recurrent headaches, arrange outpatient review.
-
-WARNING SIGNS
-- Sudden severe headache, weakness on one side, slurred speech, loss of consciousness.
-
-SELF CARE WHILE SEEKING HELP
-- Rest in a quiet dark room, hydration, simple analgesia if appropriate.
+IMMEDIATE COMFORT MEASURES FOR MILD HEADACHE
+- Rest in a quiet, dark room (helps with tension and migraine headaches).
+- Lie down or sit in a comfortable position; avoid loud noises and bright light.
+- Apply a cool or warm compress to the head or neck (whichever feels better): cool cloth on forehead, or warm cloth on neck muscles.
+- Use paracetamol at appropriate dose for age and weight; follow instructions and do not exceed recommended dose.
+- Drink water: Dehydration can cause or worsen headaches.
+- Avoid screens (phone, television, computer) which can worsen headache.
+- For migraine: If triggers are known (certain foods, stress, lack of sleep), avoid them. Some people find ice packs, dark rooms, and sleep helpful.
+- Relax: Deep breathing, meditation, or gentle stretching may help tension headaches.
+- Avoid over-using pain relievers: Using paracetamol more than 2-3 times per week can cause rebound headaches (pain returns when medication wears off).
 
 WHAT NOT TO DO
-- Avoid mixing multiple pain medications; avoid driving if dizzy/confused.
+- Do not assume a sudden severe headache is "just a headache"; sudden severe headache can indicate serious conditions (stroke, meningitis, bleeding) and requires emergency evaluation.
+- Do not mix multiple pain medications (e.g., paracetamol + ibuprofen together); use only one at a time.
+- Do not continue driving or operating machinery if dizzy or confused; stop immediately and sit or lie down.
+- Do not ignore neurological signs (weakness on one side, difficulty speaking, confusion, facial drooping); these are emergency signs of stroke.
+- Do not delay seeking care for headache with fever, stiff neck, rash, or confusion; these suggest meningitis or other serious infection.
+- Do not self-diagnose migraine; recurrent severe headaches warrant medical evaluation to rule out other causes.
+- Do not use unverified herbal remedies or supplements in place of medical assessment for persistent headaches.
+- Do not over-use pain relievers; chronic overuse can cause rebound headaches and other complications.
 
-NIGERIAN CONTEXT
-- When to access emergency services and neurology follow-up options.
+OBSERVATION GUIDE: SEEK EMERGENCY CARE IMMEDIATELY IF
+- Sudden, severe headache (described as "worst headache of my life") with or without neck stiffness, high fever, or rash (may indicate meningitis or subarachnoid hemorrhage).
+- Headache with sudden weakness, numbness, or paralysis on one side of the body (stroke).
+- Headache with difficulty speaking, slurred speech, or inability to understand words (stroke).
+- Headache with facial drooping (one side of face sags) or inability to smile evenly (stroke).
+- Headache with loss of vision, double vision, or vision loss in part of the visual field.
+- Headache with confusion, difficulty staying alert, or loss of consciousness.
+- Headache with very high fever (>39.5°C), neck stiffness, and aversion to light (meningitis).
+- Headache with severe eye pain and vision loss (may indicate glaucoma).
+- Headache following a head injury, especially if there is bleeding, confusion, or loss of consciousness.
+- Headache with signs of stroke (use the FAST test: Facial drooping, Arm weakness, Speech difficulty, Time to call emergency).
 
-REFERENCES
-- WHO neurological emergency guidance
+SEEK CARE WITHIN 24-48 HOURS IF
+- New, recurrent headaches that are not your usual pattern.
+- Headache lasting more than 72 hours despite home care and pain relief.
+- Headache with fever (even low fever) lasting more than a few hours.
+- Severe headache limiting your ability to work or function normally.
+- Headache with nausea or vomiting (though these can occur with migraines, persistent vomiting needs evaluation).
+- Progressive worsening of headache severity or frequency over days.
+- Headache in a child with high fever and unusual behavior or drowsiness.
+
+For recurrent mild headaches:
+- Seek outpatient evaluation to identify triggers and causes (tension, dehydration, eye strain, migraine, other).
+- Keep a headache diary: note date, time, severity (1-10), what you were doing, what helped, how long it lasted. This helps clinicians understand your pattern.
+- Address modifiable triggers: ensure adequate sleep, stay hydrated, manage stress, take breaks from screens, maintain regular meals.
+- Some recurrent headaches improve with lifestyle changes; others require medication prescribed by a clinician.
+
+For dizziness without headache:
+- If dizziness is mild and improves with lying down, hydrate and rest.
+- If dizziness is severe, prevents standing or walking, or is accompanied by nausea, seek medical evaluation within 24 hours.
+- Do not drive if dizzy; dizziness impairs balance and reaction time.
+- Causes of dizziness include dehydration, low blood pressure, ear problems, and neurological conditions; medical evaluation helps identify the cause.
+
+NIGERIAN CONTEXTUAL TIPS
+- Headache is very common in Nigeria, often due to dehydration in hot climate, stress, eye strain, or malaria; initial home care (rest, hydration, paracetamol) helps many headaches.
+- Malaria (fever with headache) is common; if headache is with fever, malaria testing at a health centre is advisable.
+- Stroke is increasing in Nigeria; know the FAST signs and seek emergency care immediately if signs appear.
+- Primary health centres can do initial evaluation of headaches; refer to hospital if red flags are present.
+- For chronic migraines or recurrent headaches, specialist neurologist consultation is available at teaching hospitals (LUTH Lagos, UCH Ibadan, National Hospital Abuja).

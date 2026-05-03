@@ -1,23 +1,37 @@
 SYMPTOMS: fever, cough, sore throat, nasal congestion, runny nose
 
-OVERVIEW
-Fever with respiratory symptoms can indicate viral or bacterial infections; evaluate for breathing difficulty.
-
-WHAT TO DO
-- Monitor breathing and temperature; seek care if shortness of breath or worsening symptoms.
-- Request appropriate tests where available (e.g., RDTs, chest assessment).
-
-WARNING SIGNS
-- Rapid breathing, persistent chest pain, blue lips/face, severe wheeze.
-
-SELF CARE WHILE SEEKING HELP
-- Rest, hydrate, use paracetamol for fever, isolate if contagious respiratory illness suspected.
+IMMEDIATE COMFORT MEASURES
+- Rest in a humid environment (inhale steam from a hot shower or bowl of hot water if coughing heavily).
+- Use paracetamol to lower fever and ease body aches.
+- Drink warm fluids: warm water with honey, herbal teas, warm soup, or ORS.
+- Gargle with warm salt water (1/2 teaspoon salt in warm water) for sore throat relief.
+- Use saline nasal drops or spray to clear nasal congestion.
+- Keep the environment cool and ventilated; do not over-dress.
 
 WHAT NOT TO DO
-- Avoid giving cough syrups to very young children without medical advice.
+- Do not give children under 6 years cough syrups unless specifically prescribed.
+- Do not use antibiotics; most respiratory infections are viral and antibiotics do not help.
+- Do not smoke or expose others to smoke (worsens cough and recovery).
+- Do not suppress a cough completely; coughing helps clear mucus and lungs.
+- Do not exercise or return to heavy work while fevering; rest is essential.
 
-NIGERIAN CONTEXT
-- Local clinic referral, when to visit emergency department, community health workers.
+OBSERVATION GUIDE: WATCH FOR THESE CHANGES
+Over the next 3–5 days, monitor for:
+- Fever above 39°C that does not respond to paracetamol.
+- Cough worsening or producing bloody sputum.
+- Rapid or difficult breathing (more than 40 breaths per minute in adults).
+- Chest pain when breathing or coughing.
+- Blue lips or face (sign of low oxygen).
+- Severe wheezing or stridor (high-pitched breathing).
+- Symptoms lasting more than 1 week without improvement.
+Seek medical care if any of these develop.
+
+NIGERIAN CONTEXTUAL TIPS
+- Honey is a traditional remedy widely available in Nigeria and proven to soothe coughs.
+- Many respiratory infections peak during harmattan (dry season); stay hydrated and use humidifiers or steam.
+- Primary health centres can assess breathing and provide oxygen if needed.
+- Pneumonia is common in Nigeria, especially in children; seek care if breathing difficulty develops.
 
 REFERENCES
-- NCDC, WHO
+- WHO (Pneumonia in children fact sheet, 2022; Cough management)
+- CDC (Pneumonia and respiratory infection prevention)

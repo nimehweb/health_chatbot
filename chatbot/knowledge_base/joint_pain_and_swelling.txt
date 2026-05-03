@@ -1,22 +1,55 @@
-SYMPTOMS: joint pain, swelling, stiffness, reduced range of motion
+SYMPTOMS: joint pain, joint swelling, stiffness, reduced range of motion, inability to move the joint, warmth or redness over joint
 
-OVERVIEW
-Joint pain may be due to injury, inflammatory conditions, infection, or chronic disease.
-
-WHAT TO DO
-- Seek medical review for severe pain, fever, or inability to use the joint; for mild pain, rest and analgesia.
-
-WARNING SIGNS
-- Fever with joint swelling, rapidly worsening pain, signs of sepsis.
-
-SELF CARE WHILE SEEKING HELP
-- Rest the joint, apply ice, use elevation and analgesia as needed.
+IMMEDIATE COMFORT MEASURES FOR MILD JOINT PAIN
+- Rest the joint: Stop activity that causes pain. Resting allows inflammation to decrease and healing to begin.
+- Apply ice: For the first 24-48 hours after injury, apply ice wrapped in a cloth for 15-20 minutes, several times daily. Ice reduces swelling and numbs pain. Do not apply ice directly to skin.
+- Elevate the joint: Raise the painful joint above the level of the heart if possible (e.g., prop leg on pillows). This reduces swelling.
+- Use compression: Wrap the joint with a clean cloth (not so tight that circulation is cut off); compression reduces swelling.
+- Use paracetamol: For pain relief, at appropriate dose for age and weight.
+- Avoid heavy loading: Do not carry heavy objects or put weight on the affected joint until pain and swelling improve.
+- Gradual return to activity: After 2-3 days of rest, gently start moving the joint through its normal range of motion. Movement helps prevent stiffness.
+- Apply heat after acute phase: After 2-3 days, if swelling has decreased, warm compresses can help relax muscles and ease stiffness (heat too early worsens swelling).
 
 WHAT NOT TO DO
-- Do not apply heat to acute swelling without advice; avoid heavy loading.
+- Do not apply heat to acute swelling or immediately after injury; heat increases swelling in the first 24-48 hours.
+- Do not ignore fever with joint swelling; this may indicate serious infection (septic arthritis) and needs urgent evaluation.
+- Do not continue heavy activity or exercise through joint pain; this worsens damage.
+- Do not self-diagnose fracture or serious injury; assume any severe pain or deformity might be a fracture and seek medical evaluation.
+- Do not assume mild joint pain will resolve on its own if pain or swelling persists beyond 7-10 days; medical evaluation may be needed.
+- Do not use very tight bandages that cut off circulation; the area should remain warm and pink, with normal sensation.
+- Do not ignore signs of infection: increasing redness, warmth, pus, or spreading redness around the joint.
 
-NIGERIAN CONTEXT
-- When to access orthopaedic or rheumatology services.
+OBSERVATION GUIDE: SEEK MEDICAL CARE WITHIN 24-48 HOURS IF
+- Severe pain limiting ability to move the joint or bear weight.
+- Significant swelling that does not improve with rest, ice, and elevation.
+- Joint swelling with fever (suggests infection like septic arthritis).
+- Joint pain and swelling with severe redness or warmth (sign of infection).
+- Joint swelling with difficulty moving the joint or weakness.
+- Swelling lasting more than 7-10 days despite home care.
+- Recurrent joint pain or swelling affecting multiple joints (may indicate inflammatory disease like rheumatoid arthritis).
 
-REFERENCES
-- Primary care guidance
+SEEK IMMEDIATE CARE IF
+- Joint with severe swelling, redness, warmth, and high fever (septic arthritis is a medical emergency).
+- Severe deformity of the joint suggesting fracture or dislocation.
+- Inability to bear weight on the leg or use the arm due to pain (possible fracture or serious injury).
+- Signs of circulation problems: the area below the swelling is pale, cold, or numb.
+
+For different types of joint pain:
+- Sudden joint pain after injury (sprain or strain): Rest, ice, elevation, compression (RICE protocol) for 2-3 days; gradual return to activity.
+- Recurrent or chronic joint pain (arthritis): Seek medical evaluation to diagnose the cause (osteoarthritis, rheumatoid arthritis, gout, etc.). Treatment depends on the diagnosis.
+- Joint pain with fever and swelling: Urgent evaluation needed to rule out infection.
+- Joint pain in multiple joints: Seek medical evaluation to rule out inflammatory diseases.
+
+PREVENTION
+- Avoid heavy lifting or repetitive motions that stress joints.
+- Maintain healthy weight; extra weight stresses joints.
+- Keep joints moving with regular, moderate exercise (walking, swimming).
+- Warm up before exercise and cool down afterward.
+- Use proper technique when lifting; bend knees, not back.
+- Wear supportive shoes.
+
+NIGERIAN CONTEXTUAL TIPS
+- Joint pain is common in Nigeria, often due to manual labour, trauma, or arthritis; rest and basic care help many cases.
+- For recurrent or severe joint pain, orthopaedic or rheumatology assessment is available at teaching hospitals (LUTH Lagos, UCH Ibadan, National Hospital Abuja).
+- Gout (sudden severe joint pain, often affecting the big toe) is more common in men; if suspected, seek care for diagnosis and treatment.
+- Rheumatoid arthritis and other inflammatory joint diseases require specialist management; refer to hospital if multiple joints are affected.

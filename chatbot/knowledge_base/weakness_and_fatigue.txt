@@ -1,23 +1,48 @@
-SYMPTOMS: generalized weakness, fatigue, malaise, reduced activity
+SYMPTOMS: generalized weakness, fatigue, exhaustion, reduced ability to perform daily tasks, malaise, lethargy
 
-OVERVIEW
-Weakness and fatigue can be caused by infections, chronic disease, dehydration, or other causes.
-
-WHAT TO DO
-- Rest, hydrate, seek care if sudden severe weakness, difficulty walking, or associated chest pain.
-- Consider outpatient review for persistent fatigue lasting weeks.
-
-WARNING SIGNS
-- Rapidly progressive weakness, inability to move limbs, breathing difficulty, fainting.
-
-SELF CARE WHILE SEEKING HELP
-- Gradual return to activity, maintain nutrition and hydration, avoid strenuous exertion.
+IMMEDIATE COMFORT MEASURES
+- Rest completely: Stop strenuous activity and allow the body to direct energy toward healing. Rest for at least 24–48 hours initially.
+- Hydrate: Drink plenty of clean water, ORS, or clear fluids throughout the day. Dehydration worsens weakness and fatigue.
+- Eat nutritious meals: Even if appetite is low, eat small, frequent meals. Include protein (eggs, beans, fish, meat), carbohydrates (rice, bread, cassava), and fruits/vegetables. Malnutrition worsens fatigue.
+- Sleep: Ensure adequate sleep (7–9 hours for adults); sleep allows the body to heal.
+- Avoid overexertion: Do not return to normal activity, work, or exercise until strength returns. Gradual return: light activity after 2–3 days if improving, progressing slowly.
+- Monitor body temperature: If fever is present, treat with paracetamol and ensure hydration.
+- Manage stress: Stress and anxiety worsen fatigue; rest, relaxation, and reassurance help.
+- Consider underlying cause: Weakness may be due to infection, anemia, malnutrition, dehydration, thyroid disorder, or other medical conditions. Seek care if fatigue is persistent.
 
 WHAT NOT TO DO
-- Do not ignore sudden inability to move or perform daily tasks.
+- Do not return to heavy work, exercise, or strenuous activity immediately; this worsens fatigue and delays recovery.
+- Do not ignore sudden, severe weakness or inability to move a limb; seek emergency care.
+- Do not assume fatigue will resolve without addressing hydration, nutrition, and rest.
+- Do not delay seeking care if weakness is accompanied by chest pain, difficulty breathing, or fainting.
+- Do not use stimulants (caffeine, energy drinks, or unverified supplements) to mask fatigue; this delays healing.
+- Do not ignore persistent weakness lasting more than 1–2 weeks; medical assessment is needed.
+- Do not self-diagnose or self-medicate; fatigue can indicate serious conditions (anemia, infection, thyroid disease, etc.) that need medical evaluation.
 
-NIGERIAN CONTEXT
-- Local clinics, when to seek hospital assessment.
+OBSERVATION GUIDE: SEEK MEDICAL CARE WITHIN 24–48 HOURS IF
+- Sudden severe weakness or inability to stand or walk (may indicate stroke, severe infection, or metabolic emergency).
+- Weakness accompanied by chest pain, difficulty breathing, or fainting (cardiac or respiratory emergency).
+- Rapidly worsening weakness over hours (may indicate stroke, severe infection, or neurological emergency).
+- Inability to move one side of the body or weakness limited to one side (stroke).
+- Weakness with high fever (>39°C), severe headache, stiff neck, or confusion (serious infection like meningitis).
+- Weakness with persistent vomiting or inability to drink fluids (severe dehydration).
+- Weakness with dizziness, rapid heartbeat, or shortness of breath (anemia, cardiac, or metabolic issue).
 
-REFERENCES
-- Primary care guidance
+For persistent fatigue (lasting more than 1–2 weeks) without red flags:
+- Seek outpatient medical evaluation within 1 week.
+- Medical assessment includes history (onset, associated symptoms), physical examination, and possibly blood tests (anemia, infections, thyroid function).
+- Common causes: anemia, malaria, tuberculosis, thyroid disease, diabetes, chronic infection, malnutrition, depression, or other medical conditions.
+- Treatment depends on the underlying cause once diagnosed.
+
+For post-illness fatigue:
+- After an illness (flu, infection, fever), expect weakness and fatigue for a few days to weeks as recovery occurs.
+- Gradual increase in activity, adequate nutrition, and hydration speed recovery.
+- If fatigue persists beyond expected recovery time, seek medical evaluation.
+
+NIGERIAN CONTEXTUAL TIPS
+- Malaria and anemia are common causes of weakness in Nigeria; early testing and treatment are important.
+- Nutrition is critical in Nigeria; ensure diet includes protein, vegetables, and fruits. Malnutrition contributes significantly to fatigue.
+- Tuberculosis (TB) and HIV/AIDS can cause persistent fatigue; if fatigue is unexplained or prolonged, seek testing.
+- Primary health centres can perform blood tests (hemoglobin, malaria rapid test, others) to identify causes of fatigue.
+- Ensure rest is possible: if work demands prevent adequate rest, discuss with employer or seek workplace accommodations during illness or recovery.
+- If in a community with limited medical access, prioritize nutrition, hydration, and rest as first-line management; seek care if symptoms persist or worsen.

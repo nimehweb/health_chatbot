@@ -1,22 +1,55 @@
-SYMPTOMS: painful urination, blood in urine, lower abdominal pain, frequent urination
+SYMPTOMS: painful urination (dysuria), blood in urine (hematuria), lower abdominal pain, frequent urination, urgency to urinate, fever
 
-OVERVIEW
-Hematuria and painful urination can indicate infection, stones or other causes that need evaluation.
-
-WHAT TO DO
-- Seek medical assessment for testing (urinalysis, urine culture) and targeted treatment.
-
-WARNING SIGNS
-- High fever, flank pain, vomiting, severe dehydration.
-
-SELF CARE WHILE SEEKING HELP
-- Hydrate, avoid irritant fluids like alcohol, seek prompt care for blood in urine.
+IMMEDIATE COMFORT MEASURES
+- Start immediate hydration: Drink plenty of clean water and clear fluids (herbal tea, coconut water, clear broth, or ORS). Aim for 6–8 glasses per day. More fluid dilutes urine and reduces irritation.
+- Use paracetamol: For pain and fever, at appropriate dose for age and weight.
+- Avoid irritating fluids: Do not drink alcohol, caffeine, spicy drinks, or acidic juices (orange, lemon), which irritate the bladder and worsen pain.
+- Empty bladder frequently: Urinate as soon as you feel the urge; holding urine worsens symptoms and prevents healing.
+- Use warm compresses: A warm cloth on the lower abdomen may provide comfort.
+- Rest: Avoid strenuous activity until symptoms improve.
+- Maintain perineal hygiene: Wash with clean water after urination; wipe from front to back (women and girls) to prevent reinfection.
+- Avoid sexual intercourse until symptoms resolve and medical assessment is complete.
 
 WHAT NOT TO DO
-- Do not ignore visible blood in urine; avoid self-medicating with antibiotics.
+- Do not ignore blood in urine; any visible or persistent blood in urine requires medical testing.
+- Do not self-prescribe antibiotics without a urinalysis or urine culture diagnosis (overuse causes drug resistance, and some causes of hematuria are not infections).
+- Do not drink alcohol, caffeine, or spicy drinks; they irritate the bladder and delay healing.
+- Do not delay seeking care if fever is present or if symptoms are severe; this may indicate a kidney infection (pyelonephritis), which is serious.
+- Do not assume symptoms will resolve on their own without hydration and assessment; some urinary symptoms indicate serious conditions.
+- Do not use unverified herbal remedies or traditional treatments in place of medical diagnosis.
+- Do not hold urine; emptying the bladder regularly helps healing and reduces pain.
 
-NIGERIAN CONTEXT
-- When to access urology or emergency services.
+OBSERVATION GUIDE: SEEK MEDICAL CARE WITHIN 24 HOURS FOR
+- Any blood in urine, whether visible or detected on a urine test.
+- Painful urination lasting more than a few hours, even without fever.
+- Frequent urination with pain lasting more than 24 hours.
+- Seek URGENT care if any of these develop:
+  - High fever (>39°C) with painful urination or flank pain (severe lower back pain on one side, between ribs and hip).
+  - Severe flank pain with nausea or vomiting.
+  - Inability to urinate or retention of urine (cannot pass urine despite urge).
+  - Blood in urine with severe abdominal pain.
+  - Signs of dehydration: dark urine, dry mouth, dizziness, weakness.
+  - Signs of sepsis (kidney infection spreading): very high fever, chills, confusion, rapid pulse, difficulty breathing.
 
-REFERENCES
-- Clinical guidelines
+For uncomplicated urinary tract infection (UTI) symptoms:
+- Increase hydration and monitor symptoms.
+- Seek care within 24 hours for urine testing (urinalysis, urine culture) and appropriate treatment.
+- Antibiotic treatment depends on testing results; antibiotics are prescribed after diagnosis, not before.
+- Symptoms typically improve within 2–3 days of starting appropriate antibiotics.
+
+For blood in urine without pain (hematuria):
+- This may indicate kidney stones, bleeding disorders, kidney disease, or cancer; medical assessment is essential.
+- Do not assume it is "just a UTI"; medical evaluation including urinalysis and possibly ultrasound is needed.
+
+PREVENTION
+- Drink plenty of water daily (at least 6–8 glasses).
+- Urinate after sexual intercourse.
+- Avoid holding urine for long periods.
+- Practice good perineal hygiene, especially for women and girls.
+- Avoid irritating douches, perfumed products, or harsh soaps in the genital area.
+
+NIGERIAN CONTEXTUAL TIPS
+- Clean water for hydration is essential; use boiled or treated water if tap water is not safe.
+- Urinalysis (urine testing) is available at health centres, pharmacies, and private clinics; it is inexpensive and the first step in diagnosis.
+- Urology services (for complications, stones, or persistent hematuria) are available at teaching hospitals: LUTH Lagos, University College Hospital Ibadan, National Hospital Abuja.
+- Some traditional remedies (e.g., drinking certain herb infusions) are used in Nigeria, but professional diagnosis is critical to rule out serious causes.

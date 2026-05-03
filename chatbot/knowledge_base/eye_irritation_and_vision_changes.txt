@@ -1,23 +1,63 @@
-SYMPTOMS: red eye, pain, discharge, changes in vision, blurry vision
+SYMPTOMS: red eye, eye pain, eye discharge, vision changes, blurry vision, light sensitivity, itching, foreign body sensation
 
-OVERVIEW
-Eye symptoms range from conjunctivitis to sight-threatening emergencies; vision changes need urgent assessment.
+IMMEDIATE COMFORT MEASURES
+For conjunctivitis (mild red eye, discharge, no severe pain or vision loss):
+- Wash hands frequently to avoid spreading infection to the other eye.
+- Gently clean the eye with clean, cool water or warm saline (salt water); use a clean cloth for each eye.
+- Use separate towels for each eye; do not share towels with others (infection spreads easily).
+- Avoid touching or rubbing the eye; this worsens irritation and spreads infection.
+- Remove contact lenses immediately and do not wear them until assessed by a clinician; switch to glasses.
+- Apply a cool, clean compress to the eye for comfort (10–15 minutes, 3–4 times daily).
+- Use artificial tears or saline eye drops (if available) to soothe dryness.
 
-WHAT TO DO
-- Seek urgent eye care for sudden vision loss, severe pain, or chemical exposure.
-- For mild conjunctivitis, maintain hygiene and seek primary care.
+For irritant eye exposure (dust, smoke, chemical splash):
+- Rinse the eye immediately with clean water for at least 15 minutes (allow water to flow from inner eye outward).
+- Do not rub the eye; blinking helps flush out particles.
+- If a particle is visible and easily removable, gently remove it with a clean cloth.
+- Do not attempt to remove deeply embedded objects; seek emergency care.
 
-WARNING SIGNS
-- Sudden loss of vision, severe eye pain, pupil irregularity.
-
-SELF CARE WHILE SEEKING HELP
-- Avoid rubbing, use clean compresses, avoid contact lens use until assessed.
+For eye trauma or injury:
+- Do not touch or apply pressure to the eye.
+- If there is bleeding or clear fluid from the eye, seek emergency care immediately.
+- Cover the eye gently with a clean cloth and seek urgent medical evaluation.
 
 WHAT NOT TO DO
-- Do not self-instill unverified eye drops; avoid traditional eye medicines.
+- Do not self-instill eye drops unless they are prescribed for your specific condition; unverified drops may worsen the problem.
+- Do not use traditional eye medicines, herbal preparations, or unverified remedies in the eye; they can cause permanent damage.
+- Do not wear contact lenses if there is eye infection or discharge; use glasses until cleared by an eye care professional.
+- Do not rub or scratch the eye, even if itchy; this worsens inflammation and can cause scarring.
+- Do not delay seeking emergency care if there is severe pain, vision loss, trauma, or chemical injury; these are sight-threatening.
+- Do not cover the eye with a patch if infection is suspected; this traps moisture and worsens infection.
+- Do not assume red eye is always infectious or will resolve on its own; some causes require urgent treatment.
 
-NIGERIAN CONTEXT
-- Eye clinics and referral pathways in tertiary hospitals.
+OBSERVATION GUIDE: SEEK URGENT EYE CARE IMMEDIATELY IF
+- Sudden vision loss or blurring (may indicate retinal detachment, stroke, or other emergency).
+- Severe eye pain, especially with vision loss or light sensitivity.
+- Eye trauma with bleeding, swelling of the eyelids, or inability to open the eye.
+- Chemical or foreign body in the eye that cannot be easily removed.
+- Eye discharge with very severe pain, redness, and vision loss (may indicate keratitis or serious infection).
+- Flashing lights, floaters (spots or lines in vision), or a shadow in the visual field (may indicate retinal detachment).
+- Pupils of different sizes (may indicate serious neurological condition).
+- Eye pain with severe headache, fever, or stiff neck (may indicate serious infection like meningitis).
 
-REFERENCES
-- WHO eye health resources
+For mild conjunctivitis (red eye, discharge, mild irritation, normal vision):
+- Seek care within 24–48 hours for diagnosis and appropriate treatment (may be viral, bacterial, or allergic).
+- Viral conjunctivitis (often with watery discharge and upper respiratory symptoms) usually resolves in 1–2 weeks; treatment is supportive (cleansing, cool compresses).
+- Bacterial conjunctivitis (yellow/greenish discharge, stuck eyelids) requires antibiotic eye drops or ointment prescribed by a clinician.
+- Allergic conjunctivitis (itching, watery discharge, associated with allergies) is treated with antihistamine drops and avoiding allergens.
+- Do not assume discharge will resolve without assessment; persistent discharge may indicate bacterial infection requiring antibiotics.
+
+For irritation without infection (dryness, minor irritation, no discharge):
+- Use frequent cool compresses and artificial tears or saline drops.
+- Avoid irritants (smoke, dust, dry air, bright light).
+- If symptoms persist beyond 3–5 days, seek care to rule out other causes (dry eye syndrome, minor scratches).
+
+For persistent red eye lasting more than a week:
+- Seek medical evaluation to rule out serious causes (iritis, glaucoma, keratitis, or other conditions requiring specific treatment).
+
+NIGERIAN CONTEXTUAL TIPS
+- Infectious conjunctivitis is common in Nigeria, especially during dry season; proper hand hygiene and not sharing towels or eye cosmetics prevent spread.
+- Avoid traditional eye preparations or unverified drops; these can cause irreversible vision loss if they contain harmful substances or introduce infection.
+- Saline solution for eye cleansing can be made at home: dissolve 1/4 teaspoon salt in 1 cup of boiled, cooled water.
+- Eye clinics are available at primary health centres and teaching hospitals (LUTH Lagos, University College Hospital Ibadan) for non-emergency eye problems.
+- Emergency eye care is available at teaching hospital emergency departments and some private hospitals in major cities.

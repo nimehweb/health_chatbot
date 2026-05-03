@@ -1,23 +1,72 @@
-SYMPTOMS: painful urination, increased frequency, lower abdominal pain, abnormal discharge
+SYMPTOMS: painful urination (dysuria), increased urinary frequency, lower abdominal pain, abnormal vaginal discharge (color, smell, or texture change), pelvic pain, itching or burning in genital area, fever
 
-OVERVIEW
-Urinary tract infections and vaginal infections are common and often treatable; seek care for accurate diagnosis.
-
-WHAT TO DO
-- See a clinician for testing and targeted treatment; maintain hydration.
-- Avoid unprotected sex until treated if infection suspected.
-
-WARNING SIGNS
-- Fever with flank pain, vomiting, blood in urine, signs of systemic illness.
-
-SELF CARE WHILE SEEKING HELP
-- Good hygiene, avoid irritants, maintain fluid intake.
+IMMEDIATE COMFORT MEASURES
+- Start immediate hydration: Drink plenty of clean water, herbal tea, or ORS. Increased fluids help flush the urinary system and reduce irritation.
+- Use paracetamol: For pain and fever, at appropriate dose for age and weight.
+- Avoid irritating fluids: Do not drink alcohol, caffeine, or acidic juices (citrus), which irritate the bladder and worsen symptoms.
+- Urinate frequently: Empty the bladder as soon as you feel the urge; holding urine worsens symptoms.
+- Practice good hygiene: Wash genital area with clean water after urination; women and girls should wipe from front to back to prevent bacteria from spreading from anus to urethra.
+- Use warm compresses: A warm (not hot) cloth on the lower abdomen may provide comfort.
+- Avoid sexual intercourse: Until symptoms resolve and medical evaluation is complete, sexual activity can worsen infection and spread it.
+- Avoid irritating products: Do not use douches, perfumed products, or harsh soaps in the genital area; these irritate and alter normal vaginal flora.
+- Rest: Avoid strenuous activity while symptoms are severe.
+- Clean underwear: Change underwear daily; use cotton underwear which allows air circulation (avoid tight synthetic materials).
 
 WHAT NOT TO DO
-- Do not self-prescribe antibiotics without testing.
+- Do not self-prescribe antibiotics without medical testing (urinalysis, urine culture); overuse causes drug resistance, and not all urinary symptoms are infections.
+- Do not ignore symptoms lasting more than a few hours; seek medical evaluation within 24 hours.
+- Do not assume symptoms will resolve without treatment and hydration; untreated infection can progress to kidney infection.
+- Do not use unverified herbal remedies or traditional treatments in place of medical diagnosis.
+- Do not hold urine for long periods; regular urination helps healing and reduces pain.
+- Do not use douches, perfumed sprays, or douching substances; these disrupt normal vaginal flora and worsen infection.
+- Do not continue unprotected sexual intercourse if infection is suspected; it spreads to partner and may worsen your infection.
+- Do not ignore fever with urinary symptoms; this may indicate kidney infection, which is serious.
+- Do not delay seeking care if symptoms are severe or worsening; severe cases require urgent evaluation.
 
-NIGERIAN CONTEXT
-- Where to get testing and sexual health resources.
+OBSERVATION GUIDE: SEEK MEDICAL CARE WITHIN 24 HOURS FOR
+- Painful urination lasting more than a few hours (even without fever).
+- Increased urinary frequency with pain.
+- Abnormal vaginal discharge (color, smell, or texture different from normal) lasting more than 1-2 days.
+- Lower abdominal or pelvic pain lasting more than a few hours.
+- Urinary symptoms lasting more than 24 hours despite increased hydration.
 
-REFERENCES
-- Local sexual health guidance
+SEEK URGENT CARE (WITHIN HOURS) IF
+- High fever (>39°C) with urinary symptoms (may indicate kidney infection).
+- Flank pain (severe pain in lower back, on one side, between ribs and hip) with or without fever (kidney infection).
+- Fever with urinary symptoms and nausea or vomiting (kidney infection).
+- Inability to urinate despite urge (possible urinary retention).
+- Blood in urine (even if painless; this needs evaluation).
+- Severe abdominal or pelvic pain with urinary symptoms.
+- Signs of sepsis: very high fever, chills, rapid heartbeat, weakness, confusion (infection spreading to bloodstream).
+
+For uncomplicated urinary symptoms:
+- Seek care for urine testing (urinalysis, urine culture) to confirm diagnosis and identify the cause.
+- Antibiotic treatment is based on test results; treatment is tailored to the organism causing infection.
+- Symptoms typically improve within 2-3 days of starting appropriate antibiotics.
+- Complete the full course of antibiotics even if symptoms improve early.
+
+For abnormal vaginal discharge:
+- If discharge is abnormal (different color, smell, or texture), seek care for evaluation and appropriate treatment.
+- Causes include bacterial vaginosis, yeast infection, or other organisms; diagnosis helps direct treatment.
+- Treatment depends on the cause; not all vaginal discharge is an infection.
+
+For recurrent symptoms:
+- If symptoms recur frequently (more than twice per year), discuss prevention and long-term management with a clinician.
+- Recurrence may indicate incomplete treatment, anatomical factors, or other underlying issues.
+
+PREVENTION
+- Drink plenty of water daily (6-8 glasses or more).
+- Urinate after sexual intercourse.
+- Do not hold urine for long periods.
+- Practice good perineal hygiene: wipe front to back, change underwear daily, use cotton underwear.
+- Avoid irritating products (douches, perfumed soaps) in the genital area.
+- Avoid tight, non-breathable clothing; wear cotton underwear.
+- If prone to infections, discuss preventive measures with a clinician.
+
+NIGERIAN CONTEXTUAL TIPS
+- Urinalysis (urine testing) is available at health centres, clinics, and pharmacies; it is the first step in diagnosis and is inexpensive.
+- Urine culture (culture test to identify the organism) helps determine which antibiotic is effective; some labs in major cities offer this.
+- Sexual health and reproductive health services are available at primary health centres and family planning clinics.
+- If symptoms are severe or recurrent, gynecological or urological assessment is available at teaching hospitals (LUTH Lagos, UCH Ibadan, National Hospital Abuja).
+- Ensure clean water for hydration; use boiled or treated water if tap water is unsafe.
+- Discuss any concerns about vaginal health or urinary symptoms openly with a health worker; these are common and treatable conditions.

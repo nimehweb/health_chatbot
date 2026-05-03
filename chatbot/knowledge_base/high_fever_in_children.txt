@@ -1,23 +1,60 @@
-SYMPTOMS: high fever, irritability, poor feeding, lethargy, convulsions
+SYMPTOMS: high fever (>38.5°C), irritability, poor feeding, lethargy, drowsiness, convulsions, rash, difficulty breathing
 
-OVERVIEW
-High fever in children can be serious; infants and young children dehydrate quickly and may have febrile seizures.
-
-WHAT TO DO
-- Seek urgent medical care for infants under 3 months with any fever, or if the child is very lethargic.
-- Use age-appropriate paracetamol and ensure hydration while arranging care.
-
-WARNING SIGNS
-- Poor feeding, limpness, persistent vomiting, convulsions, difficulty breathing.
-
-SELF CARE WHILE SEEKING HELP
-- Keep child lightly clothed, give small regular fluids, avoid aspirin.
+IMMEDIATE EMERGENCY MEASURES FOR INFANTS AND YOUNG CHILDREN
+- For ANY fever in infants under 3 months: Seek medical care immediately, even if the baby seems alert. Fever in babies this young can indicate serious infection.
+- For fever in children 3 months to 5 years: Seek care within hours if fever is high (>39°C) or if the child is very lethargic or unusually drowsy.
+- Give age-appropriate paracetamol (acetaminophen): Use the dose for the child's weight, not age. Follow package instructions carefully. This reduces fever and discomfort.
+- Dress lightly: Keep the child in light clothing, even if they say they feel cold. Do not over-wrap or use heavy blankets; this traps heat and worsens fever.
+- Cool the child gently: A tepid (warm, not cold) sponge bath can help cool the body. Avoid ice baths (they cause shivering and raise internal temperature).
+- Hydrate frequently: Offer small, frequent sips of water, ORS, breastmilk (if infant), or other fluids. Fever causes fluid loss; dehydration worsens illness.
+- Monitor breathing: Count breaths per minute; rapid breathing (>50 in infants, >40 in young children) suggests serious infection and needs urgent care.
+- Watch for febrile seizures: Brief convulsions can happen with high fever in young children; if this occurs, place child on their side, do not restrain, and seek immediate medical care.
 
 WHAT NOT TO DO
-- Do not delay seeking care for babies; do not give adult medications to children.
+- Do not delay seeking care for babies under 3 months with fever; waiting is dangerous.
+- Do not give aspirin to children (risk of Reye syndrome, a serious complication).
+- Do not give adult medications to children; always use age- and weight-appropriate doses.
+- Do not over-dress the child even though they feel cold; heat needs to escape to lower fever.
+- Do not use ice baths or cold water to cool the child; this causes shivering and may raise internal temperature.
+- Do not assume fever is "just teething"; fever is always a sign of infection or other illness, not teething.
+- Do not give antibiotics without medical diagnosis (most childhood fevers are viral; antibiotics don't help).
+- Do not ignore rapid or laboured breathing; this suggests pneumonia or other serious infection.
+- Do not leave a child alone during high fever; monitor closely for changes.
+- Do not delay seeking care if seizure (convulsion) occurs; this is an emergency.
 
-NIGERIAN CONTEXT
-- Local paediatric services and vaccination clinic info.
+OBSERVATION GUIDE: SEEK EMERGENCY CARE IMMEDIATELY IF
+- Fever in infant under 3 months (any fever needs urgent evaluation).
+- Fever with convulsions or seizures.
+- Difficulty breathing or rapid breathing (>50 breaths/minute in infants, >40 in young children).
+- Unusual drowsiness or lethargy (child difficult to wake or unresponsive).
+- Stiff neck or child holding neck stiffly (sign of meningitis).
+- Rash with fever, especially if rash does not blanch (turn white) when pressed with a finger (may indicate meningococcemia).
+- High fever (>40°C) with confusion or strange behavior.
+- Blue lips or tongue.
+- Inability to feed or drink, or vomiting everything given.
+- No urine for 8+ hours (sign of dehydration).
+- Fever lasting more than 5 days without improvement.
 
-REFERENCES
-- WHO child health guidance
+For fever in children 3 months to 5 years:
+- Fever alone is usually not dangerous, even if very high (104-105°F); the body's response to infection is important.
+- Monitor for warning signs above; most childhood fevers resolve in 3-5 days.
+- Give paracetamol to ease discomfort, but fever itself helps the body fight infection.
+- Seek care within hours if fever is very high (>40°C) or if child seems seriously ill.
+- Seek care within 24 hours if fever lasts more than 3 days without improvement.
+
+For fever in older children (5+ years):
+- Similar measures: light clothing, hydration, paracetamol for comfort.
+- Watch for warning signs (difficulty breathing, severe lethargy, stiff neck, rash).
+- Most fevers resolve within 3-5 days; seek care if fever persists beyond this.
+
+PREVENTION
+- Ensure child completes vaccination schedule on time; vaccines prevent serious infections (measles, meningitis, pneumonia, etc.).
+- Practice good hygiene: handwashing, food safety, sanitation reduce infection risk.
+
+NIGERIAN CONTEXTUAL TIPS
+- High fever is common in Nigerian children, often due to malaria, typhoid, or other infections; early testing (malaria RDT at clinics) helps identify the cause.
+- Paediatric services are available at primary health centres and children's wards in general hospitals and teaching hospitals (LUTH Lagos, UCH Ibadan, National Hospital Abuja).
+- Vaccination clinics at health centres provide routine immunizations (DPT, measles, meningitis, yellow fever, etc.); attend all appointments to protect children.
+- For convulsion with fever, seek immediate hospital care; febrile seizures can be managed medically, and hospital evaluation rules out serious causes like meningitis.
+- Dehydration is a major risk in fever; ensure adequate fluids; ORS is available at pharmacies and health centres.
+- Traditional remedies for fever (such as herbal baths or special foods) vary; discuss with clinician to ensure they don't interfere with medical care.

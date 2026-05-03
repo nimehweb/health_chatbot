@@ -1,23 +1,68 @@
-SYMPTOMS: thoughts of self-harm, severe depression, psychosis, sudden behavioural change
+SYMPTOMS: thoughts of self-harm or suicide, severe depression, extreme anxiety, psychosis (seeing or hearing things not real), severe agitation, sudden drastic behavior change, inability to care for self, extreme hopelessness
 
-OVERVIEW
-Mental health crises can be dangerous and require prompt support and sometimes emergency care.
-
-WHAT TO DO
-- If risk to self or others, seek emergency care or call crisis lines immediately.
-- For non-immediate crises, contact mental health services or trusted support.
-
-WARNING SIGNS
-- Active suicidal thoughts, severe agitation, inability to care for self.
-
-SELF CARE WHILE SEEKING HELP
-- Stay with the person, remove means of harm, contact emergency services.
+IMMEDIATE SUPPORT MEASURES
+- Stay calm and listen: If someone is in crisis, listen to them without judgment. Your presence and support matter.
+- Do not leave the person alone if they are at immediate risk of self-harm or suicide.
+- Call emergency services or crisis lines immediately if there is danger to self or others.
+- Remove access to means of harm: If possible and safe, remove items that could be used for self-harm (medications, sharp objects, weapons, ropes, etc.).
+- Stay present: Sit with the person; let them know they are not alone.
+- Encourage professional help: Suggest calling a mental health professional, crisis line, or going to an emergency department.
+- Validate their feelings: Say things like "I care about you," "You matter," "This crisis will pass," "Help is available."
+- Avoid arguments or dismissing their pain: Do not say "you have nothing to be sad about" or "just get over it." Pain is real.
+- Keep them safe until professional help arrives: Monitor their behavior, ensure a safe environment.
+- Get support yourself: Supporting someone in crisis is stressful; take care of your own mental health.
 
 WHAT NOT TO DO
-- Do not leave someone at immediate risk alone; do not minimise their feelings.
+- Do not leave someone at immediate risk of self-harm or suicide alone.
+- Do not dismiss, minimize, or judge their feelings ("you're overreacting," "others have it worse").
+- Do not promise to keep a secret about self-harm plans; safety comes first.
+- Do not argue or lecture about why they should not feel this way; instead, listen.
+- Do not give firearms, medications, or other means of harm to someone in crisis.
+- Do not attempt to diagnose or treat mental illness yourself; seek professional help.
+- Do not shame or criticize someone for having mental health struggles.
+- Do not delay seeking emergency help if there is any risk of self-harm, suicide, or harm to others.
+- Do not try to restrain someone by force unless trained (unless there is immediate danger); this may escalate the situation.
 
-NIGERIAN CONTEXT
-- Local mental health resources, crisis numbers, community support organisations.
+OBSERVATION GUIDE: SEEK EMERGENCY HELP IMMEDIATELY IF
+- Expressing thoughts of suicide or self-harm ("I want to die," "Everyone would be better without me," "I'm going to hurt myself").
+- Making statements about saying goodbye or making final arrangements.
+- Giving away possessions or saying goodbye to loved ones.
+- Sudden, dramatic mood change from depression to sudden calmness (may indicate decision to attempt suicide).
+- Attempting self-harm or suicide (cutting, overdose, jumping, hanging, etc.).
+- Severe agitation, aggression, or violence toward self or others.
+- Hallucinations (seeing, hearing, or feeling things that are not real) or delusions (fixed false beliefs).
+- Inability to care for self: not eating, drinking, hygiene for days, extreme neglect of appearance.
+- Complete isolation and refusal to speak to anyone.
+- Substance use with intention of self-harm.
+- Any loss of touch with reality or bizarre behavior.
 
-REFERENCES
-- WHO mental health resources
+For moderate mental health crisis (severe anxiety, panic, depression without active self-harm plans):
+- Seek mental health professional or crisis counselling within hours (same day).
+- Call crisis hotlines (available in many countries) for immediate support and guidance.
+- Go to an emergency department if the person cannot be kept safe or is unable to function.
+- Encourage taking prescribed mental health medications as directed.
+
+For ongoing mental health struggles (depression, anxiety lasting weeks):
+- Seek mental health professional evaluation (psychiatrist, psychologist, counselor) within days to weeks.
+- Encourage medical assessment (thyroid problems, other medical conditions can cause depression).
+- Support lifestyle changes: regular sleep, nutrition, exercise, social connection.
+- Recognize that mental illness is treatable; recovery is possible with proper support and treatment.
+
+PREVENTION AND ONGOING SUPPORT
+- Know the warning signs of mental health crisis in yourself and loved ones.
+- Maintain regular contact with mental health professionals if prone to depression, anxiety, or suicidal thoughts.
+- Take prescribed medications as directed; do not stop without consulting a clinician.
+- Maintain healthy lifestyle: adequate sleep, exercise, social connection, purpose.
+- Reach out for support when struggling; talking to trusted friends, family, or professionals helps.
+- Reduce access to means of self-harm (safe storage of medications, etc.).
+- Reduce substance use (alcohol and drugs worsen mental health).
+- Seek help early; mental health conditions are more treatable when caught early.
+
+NIGERIAN CONTEXTUAL TIPS
+- Mental health is often stigmatized in Nigeria; reassure the person that seeking help is a sign of strength, not weakness.
+- Mental health services: FEDERAL NEUROPSYCHIATRIC HOSPITAL Yaba (Lagos), FEDERAL NEUROPSYCHIATRIC HOSPITAL Enugu, university teaching hospitals (psychiatry departments), and private psychiatric practices.
+- Crisis support: Many NGOs in Nigeria provide mental health support; ask at health centres or contact organizations like BellaNaija Health, Mentally Aware Nigeria Initiative (MANI).
+- Family support is important; involve trusted family members in care and safety planning.
+- Traditional healers are sometimes consulted in Nigeria; ensure psychiatric evaluation is also obtained for proper diagnosis and treatment.
+- If suicide attempt or severe crisis occurs, seek emergency care at nearest hospital emergency department; police can also assist with emergency transport if needed.
+- Ensure the person is not made to feel ashamed by family or community for having mental health struggles; support and non-judgment are key to recovery.

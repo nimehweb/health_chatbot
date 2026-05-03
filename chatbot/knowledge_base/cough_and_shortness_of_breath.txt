@@ -1,23 +1,36 @@
 SYMPTOMS: cough, shortness of breath, wheeze, chest tightness
 
-OVERVIEW
-Cough and breathlessness may reflect infections, asthma, pneumonia or cardiac causes.
-
-WHAT TO DO
-- If mild, monitor; if moderate or worse, seek medical assessment and oxygen evaluation.
-- Avoid exertion and get medical review for rapid worsening.
-
-WARNING SIGNS
-- Severe shortness of breath, inability to speak full sentences, cyanosis, fainting.
-
-SELF CARE WHILE SEEKING HELP
-- Sit upright, rest, use inhaler if previously prescribed and available.
+IMMEDIATE COMFORT MEASURES
+- Sit upright (do not lie flat), which helps breathing.
+- Use a humidifier or breathe steam from a hot shower.
+- Rest and avoid exertion; let the body focus on healing.
+- Drink warm fluids slowly (warm water, herbal tea, light broth).
+- Use paracetamol for any associated fever or discomfort.
+- Loosen tight clothing.
 
 WHAT NOT TO DO
-- Do not ignore progressive breathlessness; avoid sedatives that depress breathing.
+- Do not ignore progressive shortness of breath; seek care if it worsens.
+- Do not use sedatives that might depress breathing.
+- Do not exercise or engage in strenuous activity until fully recovered.
+- Do not lie flat if breathing is difficult.
+- Do not delay seeking care if breathing becomes rapid or laboured (>40 breaths/min in adults).
 
-NIGERIAN CONTEXT
-- Where to seek emergency oxygen-capable facilities; local referral guidance.
+OBSERVATION GUIDE: WATCH FOR THESE CHANGES
+Monitor closely over the next 24–48 hours:
+- Breathing rate increasing or becoming very rapid and shallow.
+- Inability to speak in full sentences (sign of low oxygen).
+- Blue or grey colour to lips, fingers, or face.
+- Chest pain that is severe or worsens with breathing.
+- Cough producing frothy, pinkish, or bloody mucus (sign of fluid in lungs).
+- Confusion, drowsiness, or difficulty staying alert.
+- Any signs of shock: cold, clammy skin, weak pulse, fainting.
+Seek emergency care immediately if any of these occur.
+
+NIGERIAN CONTEXTUAL TIPS
+- Breathing difficulty in children is a medical emergency; transport to a hospital with oxygen capability immediately.
+- Many respiratory infections worsen during early morning hours; ensure supervision overnight.
+- Hospitals and larger health centres in Nigeria have oxygen; do not delay seeking care.
 
 REFERENCES
-- WHO, local health ministry guidance
+- WHO (Respiratory infections and pneumonia)
+- CDC (Respiratory distress guidance)

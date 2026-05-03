@@ -1,22 +1,50 @@
-SYMPTOMS: sore throat, ear pain, difficulty swallowing, muffled hearing
+SYMPTOMS: sore throat, throat pain with swallowing, ear pain, ear discharge, difficulty swallowing, muffled hearing, swollen tonsils, fever
 
-OVERVIEW
-Common ENT problems include viral pharyngitis, otitis media, and tonsillitis; differentiate red flags.
-
-WHAT TO DO
-- If mild, hydrate, rest, and use analgesia. Seek care for severe throat pain, drooling, or breathing difficulty.
-
-WARNING SIGNS
-- Stridor, drooling, severe swelling, muffled voice, high fever.
-
-SELF CARE WHILE SEEKING HELP
-- Warm fluids for adults, analgesics, avoid irritants like smoke.
+IMMEDIATE COMFORT MEASURES
+- Gargle with warm salt water: Mix 1/2 teaspoon salt in a glass of warm water; gargle for 30 seconds, then spit out. Repeat 3–4 times daily. This soothes the throat and kills some bacteria.
+- Drink warm fluids: Warm water, herbal tea (ginger, lemon, honey), warm broth, or milk can soothe throat pain. Avoid very hot beverages.
+- Use honey: 1 teaspoon of honey (not for children under 1 year) soothes cough and throat pain; it is a traditional remedy proven effective.
+- Eat soft foods: Soup, porridge, mashed banana, yogurt, soft-boiled eggs, or smooth foods are easier to swallow than hard or spicy foods.
+- Use paracetamol: At appropriate dose for age and weight to reduce pain and fever.
+- Rest: Avoid loud speaking or shouting; rest the voice.
+- Avoid irritants: Do not smoke and avoid secondhand smoke; keep the environment humid (use a humidifier or steam from hot water).
+- For ear pain: A warm cloth applied to the ear for 10–15 minutes may provide comfort; avoid inserting anything into the ear.
 
 WHAT NOT TO DO
-- Avoid home remedies that block the airway or delay care for severe symptoms.
+- Do not use home remedies that may block the airway or delay necessary medical care (such as applying thick pastes or traditional substances to the throat).
+- Do not swallow aspirin tablets or chew them (they may cause local irritation); use liquid paracetamol instead.
+- Do not insert objects into the ear to relieve pain; this can perforate the eardrum.
+- Do not assume sore throat will improve on its own if there is high fever, severe pain, or swollen tonsils with pus; seek medical evaluation.
+- Do not use antibiotics without medical diagnosis (most sore throats are viral; antibiotics do not help).
+- Do not expose the person to smoke, dust, or cold air, which irritate the throat further.
+- Do not use very hot water or very cold water for gargling; warm is most soothing.
 
-NIGERIAN CONTEXT
-- Local clinics and ENT referral pathways.
+OBSERVATION GUIDE: SEEK MEDICAL CARE IF
+Within 24–48 hours:
+- Fever above 39°C that does not respond to paracetamol.
+- Severe difficulty swallowing (drooling, unable to swallow saliva).
+- Difficulty breathing or noisy breathing (stridor).
+- Severe throat swelling with muffled voice or "hot potato" voice.
+- Rash with fever (may indicate measles or other serious infection).
+- Swollen, pus-filled tonsils (white or yellow patches on tonsils with red surrounding area).
+- Severe ear pain with ear discharge or pus draining from the ear.
+- Swollen neck glands (lymph nodes) that are very tender or do not improve within a few days.
+- Symptoms lasting more than 5–7 days without improvement.
+- Signs of dehydration: dry mouth, dark urine, weakness (due to difficulty swallowing).
 
-REFERENCES
-- WHO ENT guidance
+For mild sore throat:
+- Most viral sore throats improve within 3–5 days without antibiotics.
+- Focus on comfort measures: warm fluids, honey, salt water gargling, rest, and paracetamol.
+- Seek primary care if fever persists beyond 3 days or symptoms worsen.
+
+For ear pain:
+- If ear discharge is present, avoid inserting cotton or other objects; water may keep it infected.
+- Seek care if ear pain is severe, accompanied by fever, or ear discharge is present.
+- Do not assume ear pain will resolve without assessment; it may be an ear infection requiring treatment.
+
+NIGERIAN CONTEXTUAL TIPS
+- Salt and water for gargling are inexpensive and available everywhere in Nigeria.
+- Honey is widely available and a traditional remedy trusted by many Nigerians.
+- Antibiotics for sore throat are overused in Nigeria; most sore throats are viral and improve with home care and rest.
+- Primary health centres can diagnose sore throat and prescribe appropriate treatment if needed.
+- For recurrent ear infections or chronic ear drainage, ENT services are available at teaching hospitals: LUTH Lagos, University College Hospital Ibadan.

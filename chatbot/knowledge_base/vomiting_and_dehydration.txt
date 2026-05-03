@@ -1,23 +1,37 @@
 SYMPTOMS: vomiting, nausea, inability to keep fluids down, signs of dehydration
 
-OVERVIEW
-Vomiting that prevents oral intake risks dehydration and electrolyte loss, especially in children.
-
-WHAT TO DO
-- Start oral rehydration solutions; seek urgent care if unable to keep fluids or if severe.
-- For infants and elderly, seek prompt medical review.
-
-WARNING SIGNS
-- Lethargy, sunken eyes, very reduced urine, rapid breathing, persistent vomiting.
-
-SELF CARE WHILE SEEKING HELP
-- Small sips of ORS frequently; avoid fatty or spicy foods until recovery.
+IMMEDIATE COMFORT MEASURES
+- Give small sips of ORS every 5–10 minutes rather than large amounts (which trigger more vomiting).
+- If available, use anti-nausea remedies: ginger tea, lemon water, or small sips of clear broth.
+- Rest in a semi-upright position (not lying flat).
+- Keep the person cool and avoid strong smells or greasy foods.
+- Once vomiting lessens, offer bland foods: crackers, bread, rice, banana.
+- For infants: if breastfeeding, continue but in smaller, more frequent feeds.
 
 WHAT NOT TO DO
-- Do not give large volumes at once; avoid antiemetics without advice for children.
+- Do not give large volumes of fluid at once; it will trigger more vomiting.
+- Do not give carbonated drinks or juices (they worsen vomiting and dehydration).
+- Do not give anti-vomiting medications (except under medical advice for specific conditions).
+- Do not assume vomiting will stop on its own if severe; dehydration can happen within hours.
+- Do not delay care for infants under 6 months with any vomiting.
 
-NIGERIAN CONTEXT
-- Access to ORS, when to visit nearest clinic or hospital.
+OBSERVATION GUIDE: WATCH FOR THESE CHANGES
+Monitor closely over the next 4–6 hours:
+- Dry mouth, lips, and tongue (sign of dehydration).
+- Sunken eyes or anterior fontanelle (soft spot) in infants.
+- No urine for more than 8 hours (in older children/adults).
+- Lethargy, dizziness, or confusion.
+- Rapid or laboured breathing.
+- Vomiting with severe abdominal pain (may indicate appendicitis or obstruction).
+- Any blood or green/brown material in vomit.
+If dehydration signs develop or vomiting persists beyond 4 hours, seek urgent medical care.
+
+NIGERIAN CONTEXTUAL TIPS
+- ORS sachets from pharmacies and health posts are cheap and effective; use immediately.
+- If vomiting persists, intravenous fluids at a health centre may be necessary (available in most towns).
+- Cholera and other serious infections can cause severe vomiting; timely ORS use can save lives.
+- In rural areas where clinics are distant, starting ORS early at home while arranging transport is critical.
 
 REFERENCES
-- WHO rehydration guidance
+- WHO (Diarrhoeal disease and cholera management, 2024)
+- CDC (Rehydration therapy guidelines, 2025)

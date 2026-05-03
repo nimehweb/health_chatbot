@@ -1,23 +1,74 @@
-SYMPTOMS: general advice covering multiple mild symptoms
+SYMPTOMS: various mild symptoms (fatigue, mild fever, mild cough, mild headache, general malaise)
 
 OVERVIEW
-Guidance for common mild conditions and when escalation is needed.
+Many mild illnesses resolve with good home care and time. This guide helps you decide when self-care is enough and when to seek medical help.
 
-WHAT TO DO
-- Rest, hydrate, use over-the-counter analgesics appropriately, monitor symptoms.
-- Seek care if symptoms worsen, persist beyond expected time, or new red flags appear.
+IMMEDIATE COMFORT MEASURES FOR MILD ILLNESS
+- Rest: Allow your body time to heal by resting adequately; most viral illnesses require 3–7 days of recovery.
+- Hydrate: Drink plenty of clean water, ORS, herbal tea, or clear fluids. Proper hydration helps the immune system and prevents complications like dehydration.
+- Use paracetamol: For mild fever (<39°C) or discomfort, paracetamol (acetaminophen) at appropriate dose for age and weight.
+- Eat nutritious meals: Even if appetite is low, eat small, frequent meals with protein, fruits, and vegetables. Good nutrition supports immune function.
+- Maintain hygiene: Wash hands frequently, cover coughs and sneezes with a tissue, avoid close contact with others if you have respiratory symptoms (you might spread infection).
+- Keep environment cool: For mild fever, keep the room well-ventilated and use light clothing; avoid over-wrapping.
+- Use home remedies: Honey (for cough in adults and children >1 year), ginger tea, warm salt water (for sore throat), steam inhalation (for cough or nasal congestion).
 
-WARNING SIGNS
-- Any red flag listed in other articles (fever >39°C, severe pain, breathing difficulty).
+WHEN TO MANAGE AT HOME ONLY
+- Mild cough with no fever or mild fever <38.5°C, good appetite, normal breathing.
+- Mild headache without confusion, vision changes, or severe weakness.
+- Mild sore throat without difficulty swallowing or severe pain.
+- Mild diarrhea without blood, fever, or signs of dehydration.
+- General fatigue from a known illness (like flu) that is improving with rest.
+- Mild rash without fever or signs of spreading infection.
 
-SELF CARE WHILE SEEKING HELP
-- Simple home care measures, when to use paracetamol, when to use ORS.
+WHEN TO SEEK CARE WITHIN 24–48 HOURS
+- Fever 38.5°C–39.5°C lasting more than 48 hours.
+- Cough lasting more than 7–10 days without improvement.
+- Diarrhea lasting more than 3 days or with blood in stool.
+- Sore throat with difficulty swallowing or high fever.
+- Rash that is spreading or accompanied by fever.
+- Unexplained weakness or fatigue lasting more than a few days despite rest and nutrition.
+- Abdominal pain that is persistent or worsening.
+- Any symptom that worries you or does not improve with home care.
 
-WHAT NOT TO DO
-- Avoid unnecessary antibiotics and unverified traditional treatments.
+WHEN TO SEEK URGENT CARE (WITHIN HOURS) OR EMERGENCY CARE
+- High fever (>39.5°C) with confusion, severe headache, or stiff neck (possible meningitis).
+- Severe shortness of breath or rapid breathing (>40 breaths per minute in adults).
+- Chest pain or palpitations with shortness of breath or fainting.
+- Severe abdominal pain, especially with vomiting or inability to keep fluids down.
+- Blood in vomit, stool, or urine (unless explained by known condition).
+- Severe dehydration signs: extreme dry mouth, no urine for 8+ hours, severe dizziness, confusion.
+- Signs of sepsis: very high fever with cold, clammy skin, rapid heartbeat, weakness, confusion.
+- Inability to stay awake or confusion.
+- Choking, difficulty breathing, or throat so swollen you cannot swallow saliva.
+- Severe bleeding that does not stop with pressure.
+- Signs of stroke: sudden weakness on one side, difficulty speaking, facial drooping.
 
-NIGERIAN CONTEXT
-- Use primary health centres for initial care; when to go to hospital.
+WHAT NOT TO DO FOR MILD ILLNESS
+- Do not give antibiotics for viral infections (colds, flu, most coughs); antibiotics do not help and contribute to drug resistance.
+- Do not use multiple pain medications at once; use only paracetamol as directed.
+- Do not suppress coughs completely; coughing helps clear the lungs.
+- Do not delay seeking care if red flags develop; minor symptoms can sometimes indicate serious conditions.
+- Do not ignore persistent symptoms; if home care does not improve symptoms within the expected timeframe, seek medical assessment.
+- Do not use unverified traditional remedies in place of medical care for serious symptoms.
+- Do not assume you know what illness you have; let a clinician confirm diagnosis, especially if symptoms are unusual or severe.
 
-REFERENCES
-- WHO, NCDC
+PREVENTION OF COMMON ILLNESSES
+- Vaccination: Keep up-to-date with vaccinations (MMR, tetanus, influenza, COVID-19, etc.) to prevent serious illness.
+- Hand hygiene: Wash hands frequently with soap and water, especially before eating and after bathroom use.
+- Respiratory etiquette: Cover coughs and sneezes; avoid close contact with sick people.
+- Food safety: Eat well-cooked food from clean sources; boil water if tap water is not safe.
+- Sleep and nutrition: Adequate sleep and good nutrition strengthen the immune system.
+- Exercise: Regular physical activity supports overall health.
+
+WHEN TO CALL A HEALTH WORKER OR SEEK CARE
+- If uncertain whether to seek care, calling a health worker or a local clinic for advice is safer than waiting.
+- Many primary health centres have telephone hotlines or can advise when someone calls.
+- Do not wait if symptoms are severe or red flags are present; seek care immediately.
+
+NIGERIAN CONTEXTUAL TIPS
+- Primary health centres (PHCs) are available in most communities and are the first point of care for mild to moderate illness.
+- General practitioners and private clinics in towns offer quick assessment and are accessible if you can afford costs.
+- Paracetamol is inexpensive and widely available at pharmacies and health centres.
+- ORS sachets for dehydration are cheap and available everywhere in Nigeria.
+- Vaccination clinics at health centres provide routine immunizations; inquire about vaccine schedules for children and adults.
+- If unsure about symptoms or when to seek care, do not hesitate to visit a health centre; better to be checked than to delay important care.

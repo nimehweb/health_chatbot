@@ -1,23 +1,37 @@
 SYMPTOMS: fever, chills, sweating, body aches, elevated temperature
 
-OVERVIEW
-Brief description of fever and chills as a symptom complex and common causes in Nigeria.
-
-WHAT TO DO
-- Seek care if fever is high (>39°C) or persistent beyond 48 hours.
-- Get tested where available (malaria RDT, COVID/other tests as appropriate).
-
-WARNING SIGNS
-- Confusion, inability to drink, seizures, difficulty breathing, persistent vomiting.
-
-SELF CARE WHILE SEEKING HELP
-- Stay hydrated, rest, use paracetamol as advised, avoid aspirin in children.
+IMMEDIATE COMFORT MEASURES
+- Rest in a cool, well-ventilated place. Do not over-wrap the person even if they feel cold.
+- Use paracetamol (acetaminophen) to reduce fever if available; follow dosing for age and weight.
+- Drink plenty of clean water or oral rehydration solution (ORS) to stay hydrated.
+- Use a damp, cool cloth on the forehead and neck for comfort.
+- Change into light, loose clothing.
 
 WHAT NOT TO DO
-- Do not give antibiotics without prescription; avoid unverified traditional remedies.
+- Do not use aspirin in children (risk of serious complications).
+- Do not force the person to eat if they have no appetite; focus on hydration first.
+- Do not use unverified herbal remedies or traditional treatments without medical advice.
+- Do not give antibiotics without a medical diagnosis (risk of drug resistance).
+- Do not assume the fever will resolve on its own if it is very high or persistent.
 
-NIGERIAN CONTEXT
-- Where to seek care (primary health centre, pharmacy clinics, NCDC resources).
+OBSERVATION GUIDE: WATCH FOR THESE CHANGES
+Over the next 6–24 hours, monitor for:
+- Fever that remains above 39°C (103°F) despite paracetamol.
+- Fever lasting more than 48 hours without improvement.
+- Confusion, difficulty speaking, or drowsiness beyond normal tiredness.
+- Persistent vomiting (unable to keep any fluids down).
+- Unusual weakness or difficulty moving (stiffness in neck).
+- Rapid or difficult breathing.
+- Any convulsions or seizures.
+If any of these develop, seek emergency care immediately.
+
+NIGERIAN CONTEXTUAL TIPS
+- Many health centres and pharmacies in Nigeria sell paracetamol and can advise on safe dosing.
+- Malaria is common in Nigeria, especially during rainy season; early testing (RDT at clinics) helps confirm diagnosis.
+- If ORS is unavailable, make a homemade rehydration mix: 6 teaspoons sugar + 1/2 teaspoon salt in 1 litre of clean boiled water.
+- Rest under a mosquito net (especially treated nets) while recovering; this prevents mosquito bites and aids recovery.
+- The Nigeria Centre for Disease Control (NCDC) toll-free line is 6232 for health emergencies or questions about infectious diseases.
 
 REFERENCES
-- NCDC, WHO Nigeria
+- WHO (Malaria fact sheet, 2025; Fever management)
+- NCDC (National Malaria Elimination Programme)

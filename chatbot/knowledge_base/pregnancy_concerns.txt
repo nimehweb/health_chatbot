@@ -1,22 +1,68 @@
-SYMPTOMS: vaginal bleeding, severe abdominal pain, decreased fetal movement, severe headache
+SYMPTOMS: vaginal bleeding in pregnancy, severe abdominal or pelvic pain, decreased fetal movement, severe headache with pregnancy, visual changes, swelling of face or hands, chest pain in pregnancy
 
-OVERVIEW
-Pregnancy-related red flags require urgent obstetric assessment to protect mother and baby.
+IMMEDIATE ACTION FOR WARNING SIGNS IN PREGNANCY
+Some symptoms in pregnancy require immediate medical evaluation. Seek care right away for:
+- Any vaginal bleeding (spotting, heavy bleeding, or clots).
+- Severe abdominal or pelvic pain.
+- Decreased fetal movement (if in later pregnancy; normally >10 movements in 2 hours).
+- Severe headache, vision changes, or upper abdominal pain (may indicate preeclampsia).
+- Chest pain or difficulty breathing.
+- Signs of infection: high fever (>38.5°C), chills, vaginal discharge with foul smell.
+- Severe fainting or dizziness.
+- Severe vomiting (unable to keep any fluids down).
 
-WHAT TO DO
-- Seek immediate care at an antenatal clinic or emergency obstetric unit for any bleeding or severe pain.
+IMMEDIATE COMFORT MEASURES FOR MILD PREGNANCY SYMPTOMS
+- For nausea/vomiting: Eat small, frequent meals; avoid greasy or spicy foods; ginger and crackers help some women; stay hydrated.
+- For heartburn: Eat small meals, avoid very hot or spicy foods, sit upright after eating.
+- For fatigue: Rest as needed; sleep is important during pregnancy.
+- For lower back pain: Warm compress, good posture, pregnancy support pillows.
+- For constipation: Increase fiber (vegetables, fruits), drink plenty of water, light exercise.
+- For swollen feet/legs: Elevate legs, wear comfortable shoes, move around regularly (avoid prolonged sitting).
+- For sleep problems: Try relaxation techniques, comfortable position with pillows, warm milk.
+- Lie on the left side when resting: This improves blood flow to the baby.
 
-WARNING SIGNS
-- Heavy bleeding, severe abdominal pain, fainting, reduced fetal movements.
+WHAT NOT TO DO IN PREGNANCY
+- Do not delay seeking medical care for bleeding, severe pain, or warning signs; these can indicate serious complications like miscarriage, ectopic pregnancy, preeclampsia, or placental problems.
+- Do not self-treat with medications unless approved safe in pregnancy; some medications harm the baby.
+- Do not take herbal remedies without checking with a clinician; some herbs are unsafe in pregnancy.
+- Do not use traditional remedies that include irritating or harsh substances to induce labor or terminate pregnancy (they can cause severe bleeding, infection, or death).
+- Do not perform heavy lifting or strenuous exercise without medical clearance.
+- Do not ignore decreased fetal movement; count kicks and seek evaluation if movement decreases.
+- Do not smoke, drink alcohol, or use drugs; these harm fetal development.
+- Do not delay attending antenatal appointments; regular care prevents complications.
+- Do not ignore signs of infection: fever, vaginal discharge with odor, or dysuria; infection in pregnancy is serious.
+- Do not assume complications will resolve on their own; seek medical evaluation.
 
-SELF CARE WHILE SEEKING HELP
-- Lie on the left side if possible, avoid heavy activity, arrange transport.
+OBSERVATION GUIDE: SEEK IMMEDIATE OBSTETRIC CARE FOR
+- Any vaginal bleeding during pregnancy (even light spotting).
+- Severe abdominal or pelvic pain (not just mild cramping).
+- Decreased fetal movement: fewer than 10 movements in 2 hours (in third trimester; earlier in pregnancy, movement increases gradually).
+- Severe headache with vision changes, swelling, or upper abdominal pain (preeclampsia signs).
+- Chest pain, difficulty breathing, or fainting.
+- High fever (>38.5°C) with chills, vaginal discharge, or pain; suspect infection.
+- Sudden gush of fluid from vagina (may indicate rupture of membranes, "waters breaking").
+- Regular contractions before term (before 37 weeks) with pain or bleeding.
+- Severe vomiting (hyperemesis) preventing nutrition and hydration.
+- Any concern that feels serious or unusual; trust your instinct.
 
-WHAT NOT TO DO
-- Do not use traditional remedies that delay care; avoid heavy lifting.
+For routine pregnancy care:
+- Attend all antenatal appointments as scheduled (monthly early in pregnancy, then more frequently in third trimester).
+- Ultrasound and tests check baby's health and identify complications early.
+- Take prescribed vitamins (iron, folic acid) to prevent anemia and birth defects.
+- Maintain good nutrition and hydration; baby's growth depends on mother's health.
+- Report all symptoms to clinician, even if they seem minor; patterns help identify problems.
 
-NIGERIAN CONTEXT
-- Where to access maternity units and emergency obstetric care.
+For labor (contractions at term):
+- Regular, painful contractions (every 5-10 minutes) with vaginal bleeding, fluid loss, or pressure signal labor.
+- Seek obstetric care when contractions are strong and regular; avoid staying home too long.
+- Do not attempt home delivery unless trained; complications can arise suddenly.
 
-REFERENCES
-- WHO maternal health guidance
+NIGERIAN CONTEXTUAL TIPS
+- Antenatal care is available at Primary Health Centres (PHCs) and hospitals; attend regularly to monitor mother and baby health and detect complications early.
+- Obstetric emergency services are available at general hospitals and teaching hospitals (Lagos State Teaching Hospital, University College Hospital Ibadan, National Hospital Abuja).
+- Traditional birth attendants are common in Nigeria, but skilled attendance (nurse, midwife, doctor) at delivery significantly reduces maternal and infant death.
+- Facility delivery (at hospital or health centre) is safer than home delivery; plan ahead for safe delivery.
+- If bleeding or other emergency occurs, do not delay seeking facility care; maternal death is preventable with timely, appropriate care.
+- Ensure good nutrition throughout pregnancy; malnutrition increases risk of complications and poor birth outcomes.
+- Avoid heavy work and strenuous activity, especially in later pregnancy; rest is important.
+- Regular antenatal care identifies high-risk pregnancies (e.g., high blood pressure, diabetes) that need closer monitoring.

@@ -1,23 +1,64 @@
-SYMPTOMS: sudden swelling, difficulty breathing, throat tightness, hives, rash
+SYMPTOMS: sudden swelling of lips, mouth, tongue, or throat, difficulty breathing or wheezing, hives or widespread rash, rapid heart rate, severe itching, fainting, throat tightness
 
-OVERVIEW
-Anaphylaxis is a life-threatening allergic reaction that requires immediate emergency care.
-
-WHAT TO DO
-- Call emergency services and give intramuscular epinephrine if available and trained to do so.
-- Lay the person flat with legs elevated unless breathing difficulty requires sitting up.
-
-WARNING SIGNS
-- Rapid breathing, loss of consciousness, severe swelling of face or throat.
-
-SELF CARE WHILE SEEKING HELP
-- If epinephrine prescribed, use as instructed; seek immediate transport to hospital.
+IMMEDIATE EMERGENCY MEASURES FOR ANAPHYLAXIS
+- Call emergency services immediately: Call 112 (Nigeria emergency), local ambulance, or go to the nearest emergency department without delay. Do not wait to see if symptoms improve.
+- Use epinephrine if available: If the person has been prescribed epinephrine auto-injector (EpiPen or similar), use it immediately:
+  * Remove the auto-injector from carrier tube.
+  * Remove blue safety release (if present).
+  * Swing and push firmly into the outer thigh (can go through clothing) at a 90-degree angle.
+  * Hold in place for 3-10 seconds, then remove and massage injection site for 10 seconds.
+  * Get emergency help immediately even after epinephrine (symptoms may return; second dose may be needed).
+- Lay the person flat with legs elevated (unless they are having difficulty breathing; then raise head): This position helps blood flow to vital organs.
+- If difficulty breathing, allow sitting upright: Choking feeling or breathing difficulty may require upright position.
+- Remove triggers if possible: Remove jewelry around neck if swelling threatens airway, loosen tight clothing.
+- Do not eat, drink, or give medications by mouth: There is a risk of choking if swallowing is impaired.
+- Stay calm and reassure: Tell the person help is coming; stay with them.
+- Monitor breathing and consciousness: Be ready to perform CPR if trained and if the person stops breathing.
+- Have the person lie on their side if unconscious: This prevents choking if vomiting occurs.
 
 WHAT NOT TO DO
-- Do not delay epinephrine; do not give oral antihistamines as sole therapy for severe reactions.
+- Do not delay using epinephrine if available; early use saves lives. Do not wait to see if antihistamines alone will work.
+- Do not delay seeking emergency care after using epinephrine; hospital evaluation is mandatory (symptoms may recur).
+- Do not wait at home; always seek emergency department care for anaphylaxis.
+- Do not give only oral medications (antihistamines, steroids) for anaphylaxis; epinephrine is the first-line, life-saving treatment.
+- Do not make the person stand or sit up suddenly if they are very swollen or short of breath; this can worsen breathing difficulty.
+- Do not give food or drink (risk of choking with swollen throat).
+- Do not apply tight bandages or restrict neck/throat area.
+- Do not assume symptoms will improve without treatment; anaphylaxis can worsen rapidly and is life-threatening.
+- Do not drive yourself to hospital if severely affected; call emergency services for transport with paramedic support.
+- Do not ignore previous severe allergic reactions; people with one anaphylactic reaction are at risk for others.
 
-NIGERIAN CONTEXT
-- Emergency response options and where to get urgent care.
+OBSERVATION GUIDE: THESE ARE ANAPHYLAXIS RED FLAGS REQUIRING EMERGENCY CARE
+- Sudden difficulty breathing or wheezing.
+- Throat tightness or feeling of choking (feeling inability to swallow or breathe).
+- Facial swelling (lips, tongue, face) or swelling visible inside the mouth.
+- Hives (raised, itchy rash) or widespread red rash developing suddenly.
+- Rapid, weak, or irregular heartbeat.
+- Fainting or loss of consciousness.
+- Severe itching of skin or palms and soles.
+- Nausea, vomiting, severe abdominal pain, or diarrhea with above symptoms.
+- Confusion or sense of impending doom.
+- Any combination of symptoms occurring suddenly after known or suspected allergen exposure.
 
-REFERENCES
-- WHO anaphylaxis guidance
+For moderate allergic reactions (not anaphylaxis):
+- Localized hives, mild itching, mild swelling of lips or face (without breathing difficulty): Seek care within hours.
+- Use antihistamine (if available) and monitor for worsening.
+- If symptoms worsen or breathing becomes difficult, go to emergency department immediately.
+- Do not assume a reaction is mild if there is ANY breathing difficulty; seek emergency care.
+
+PREVENTION
+- Identify and avoid allergens: Common triggers include nuts, shellfish, eggs, peanuts, tree nuts, milk, fish, insect stings, medications, latex.
+- Carry epinephrine auto-injector if history of severe allergic reactions: Keep it accessible at all times.
+- Wear medical alert bracelet or necklace stating your severe allergies.
+- Inform family, friends, workplace, and schools about your allergies and where epinephrine is kept.
+- Read food labels carefully; cross-contamination can occur.
+- Inform medical staff and dentists about allergies before any procedure or medication.
+- Do not experiment with small amounts of known allergens; reactions can change and become more severe.
+
+NIGERIAN CONTEXTUAL TIPS
+- Epinephrine auto-injectors (EpiPen) may be difficult to obtain in Nigeria; if prescribed, ensure they are available and not expired. Work with a clinician to plan management.
+- Major allergies (nuts, shellfish) require vigilance in food preparation; inform cooks and food vendors of allergy.
+- Hospital emergency departments in teaching hospitals (LUTH Lagos, UCH Ibadan, National Hospital Abuja) have epinephrine and can manage anaphylaxis.
+- Insect stings are common in Nigeria; if history of severe reaction to stings, discuss allergy management with clinician.
+- Antihistamines are available at pharmacies; keep on hand if prone to allergic reactions, but remember they are not a substitute for epinephrine in anaphylaxis.
+- Seek medical assessment if allergies worsen or new symptoms develop; refer to allergy specialist if available at teaching hospitals.
