@@ -11,9 +11,10 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / '.env')
 
 # ── Security ──────────────────────────────────────────────────────────────────
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+# Try DJANGO_SECRET_KEY first (Railway convention), fall back to SECRET_KEY (.env convention)
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') or os.environ.get('SECRET_KEY')
 if not SECRET_KEY:
-    raise ValueError("DJANGO_SECRET_KEY environment variable is not set.")
+    raise ValueError("SECRET_KEY or DJANGO_SECRET_KEY environment variable is not set.")
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 

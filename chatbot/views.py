@@ -210,7 +210,7 @@ def send_message(request):
             severity=extracted.get('severity'),
             duration=extracted.get('duration'),
             urgency=urgency,
-            guidance_text=guidance_text,
+            rule_guidance=guidance_text,
             probable_diseases=probable_diseases
         )
 
