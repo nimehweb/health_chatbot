@@ -145,55 +145,130 @@ Rules:
         )
 
 
-def generate_followup_question(conversation_history, severity_known,
-                               duration_known):
+def _get_fallback_question(phase, known_info):
     """
-    Generates a focused follow-up question for whatever slot is missing.
+    Fallback questions when LLM fails — still clinically sensible.
+    Used when the API is unavailable or times out.
     """
-    history_text = ""
-    for msg in conversation_history:
-        role = "User" if msg['type'] == 'user' else "Bot"
-        history_text += f"{role}: {msg['content']}\n"
+    fallbacks = {
+        'intro': "What brought you in today? What symptoms are you experiencing?",
+        'core_characterization': (
+            "How would you describe the pain or discomfort — "
+            "is it sharp, dull, burning, or something else?"
+        ),
+        'associated_symptoms': (
+            "Are you experiencing any other symptoms "
+            "like fever, nausea, shortness of breath, or chills?"
+        ),
+        'history_meds': (
+            "Do you have any chronic medical conditions "
+            "or take any regular medications?"
+        ),
+        'complete': "Is there anything else you'd like to tell me?",
+    }
+    return fallbacks.get(phase, "Is there anything else you'd like to tell me?")
 
-    if not severity_known:
-        what_to_ask = "how severe their symptoms are — mild moderate or severe"
-    elif not duration_known:
-        what_to_ask = "how long they have been experiencing these symptoms"
-    else:
-        what_to_ask = "if they have any other symptoms"
 
-    prompt = f"""You are a focused healthcare assistant collecting information
-from a patient before assessing their condition.
+def generate_followup_question(conversation_history, extracted_data,
+                               current_phase, questions_asked_in_phase):
+    """
+    Uses a clinical interview protocol to ask the NEXT BEST QUESTION
+    based on what we've learned so far — not just checking boolean slots.
+    
+    This implements dynamic interviewing:
+    - Phase 1 (intro): Core symptom characterization (onset, duration, quality, severity, location)
+    - Phase 2 (core_characterization): Modifying factors and associated symptoms
+    - Phase 3 (associated_symptoms): Past medical history and medications
+    - Phase 4 (history_meds): Assessment complete
+    
+    Args:
+        conversation_history: List of dicts with 'type' and 'content'
+        extracted_data: Dict with 'symptoms', 'severity', 'duration', etc.
+        current_phase: Current interview phase (string)
+        questions_asked_in_phase: Number of questions asked in this phase (int)
+    """
+    history_text = "\n".join([
+        f"{msg['type'].upper()}: {msg['content']}" 
+        for msg in conversation_history
+    ])
+    
+    # Compile what we already know
+    known_info = {
+        "symptoms": extracted_data.get("symptoms", []),
+        "severity": extracted_data.get("severity"),
+        "duration": extracted_data.get("duration"),
+        "associated_symptoms": extracted_data.get("associated_symptoms", []),
+        "past_medical_history": extracted_data.get("past_medical_history"),
+        "medications": extracted_data.get("medications"),
+    }
+
+    import json
+    
+    prompt = f"""You are an experienced physician conducting a systematic medical interview.
+Your goal is to gather just enough information to provide accurate GUIDANCE and TRIAGE 
+(NOT diagnosis — never attempt to diagnose).
+
+CLINICAL INTERVIEW PROTOCOL:
+
+Phase 1 (Intro): Establish main complaint
+- Onset: When did this start?
+- Duration: How long has it been?
+- Quality: What does it feel like? (sharp, dull, throbbing, burning, etc.)
+- Severity: On a scale of 1-10? Or mild/moderate/severe?
+- Location: Where exactly is it?
+
+Phase 2 (Core Characterization): Associated symptoms and modifying factors
+- What other symptoms accompany the main complaint?
+- What makes it better? What makes it worse?
+- Any fever, chills, sweating, nausea, vomiting?
+- Has this happened before?
+
+Phase 3 (Associated Symptoms): Medical and medication history
+- Relevant past medical conditions?
+- Current medications or supplements?
+- Allergies?
+- Recent travel or exposures?
+
+Phase 4 (History/Meds): Complete and prepare for guidance
+- Any other important information?
+
+---
 
 CONVERSATION SO FAR:
 {history_text}
 
-Your ONLY job right now is to ask the patient: {what_to_ask}
+WHAT WE KNOW SO FAR:
+{json.dumps(known_info, indent=2)}
 
-Rules:
-- Ask ONLY about {what_to_ask} — nothing else
-- ONE short sentence
-- Sound caring and natural like a nurse
-- Do NOT ask about anything already covered in the conversation
-- Do NOT say hello or introduce yourself again"""
+CURRENT INTERVIEW PHASE: {current_phase} (Question #{questions_asked_in_phase + 1})
+
+YOUR TASK:
+Ask ONE specific, clinical follow-up question that will provide the MOST VALUABLE 
+next piece of information. This question should:
+- NOT repeat anything already discussed in the conversation
+- Be specific to THIS patient's presentation (not generic)
+- Be under 18 words
+- Sound natural and caring, like a real healthcare provider
+- Help narrow down appropriate guidance and triage level
+- Push the interview forward through the phases
+
+Return ONLY the question as plain text, no explanation or quotation marks."""
 
     try:
         client = get_groq_client()
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.5,
-            max_tokens=80
+            temperature=0.6,
+            max_tokens=60
         )
         return response.choices[0].message.content.strip()
-
+    
     except Exception as e:
         print(f"Followup error: {e}")
         if _is_connection_error(e):
             return CONNECTION_ERROR_MESSAGE
-        if not severity_known:
-            return "Could you describe how severe your symptoms feel — mild moderate or quite severe?"
-        return "How long have you been experiencing these symptoms?"
+        return _get_fallback_question(current_phase, known_info)
 
 
 def generate_additional_symptoms_question(conversation_history):
@@ -436,3 +511,50 @@ STRICT RULES:
             "Please note this is not a medical diagnosis. "
             "See a qualified healthcare professional."
         )
+
+
+def advance_interview_phase(session, severity_known, duration_known):
+    """
+    Advances the interview to the next phase when the current phase
+    has gathered enough information.
+    
+    Phases advance as:
+    - intro → core_characterization (when severity AND duration known)
+    - core_characterization → associated_symptoms (after 2-3 questions)
+    - associated_symptoms → history_meds (after 2-3 questions)
+    - history_meds → complete (after asking about medical history)
+    
+    Args:
+        session: ChatSession instance
+        severity_known: Boolean
+        duration_known: Boolean
+    """
+    current = session.current_interview_phase
+    
+    # Intro phase: move forward once we have severity and duration
+    if current == 'intro':
+        if severity_known and duration_known:
+            session.current_interview_phase = 'core_characterization'
+            session.questions_asked_in_phase = 0
+    
+    # Core characterization: move forward after asking 2-3 questions
+    elif current == 'core_characterization':
+        if session.questions_asked_in_phase >= 2:
+            session.current_interview_phase = 'associated_symptoms'
+            session.questions_asked_in_phase = 0
+    
+    # Associated symptoms: move forward after asking 2-3 questions
+    elif current == 'associated_symptoms':
+        if session.questions_asked_in_phase >= 2:
+            session.current_interview_phase = 'history_meds'
+            session.questions_asked_in_phase = 0
+    
+    # History/Meds: move to complete after asking questions
+    elif current == 'history_meds':
+        if session.questions_asked_in_phase >= 1:
+            session.current_interview_phase = 'complete'
+            session.questions_asked_in_phase = 0
+    
+    # Increment the question counter for this phase
+    session.questions_asked_in_phase += 1
+    session.save()

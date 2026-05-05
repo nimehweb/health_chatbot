@@ -90,6 +90,26 @@ class ChatSession(models.Model):
     # Has the bot asked about additional symptoms yet?
     additional_symptoms_asked = models.BooleanField(default=False)
     
+    # Interview phase tracking for dynamic clinical questioning
+    INTERVIEW_PHASES = [
+        ('intro', 'Initial contact - understanding main complaint'),
+        ('core_characterization', 'Questions 1-3: Onset, duration, quality, severity, location'),
+        ('associated_symptoms', 'Questions 4-6: Associated symptoms & modifying factors'),
+        ('history_meds', 'Questions 7-8: Past history & medications'),
+        ('complete', 'Assessment complete'),
+    ]
+    
+    current_interview_phase = models.CharField(
+        max_length=50,
+        choices=INTERVIEW_PHASES,
+        default='intro'
+    )
+    
+    questions_asked_in_phase = models.IntegerField(
+        default=0,
+        help_text="Count of follow-up questions asked in current phase"
+    )
+    
     def __str__(self):
         return f"Session {self.session_id} ({self.created_at.strftime('%Y-%m-%d %H:%M')})"
 

@@ -11,7 +11,8 @@ from .llm_service import (
     generate_followup_question,
     generate_guidance,
     generate_additional_symptoms_question,
-    match_symptoms_to_database
+    match_symptoms_to_database,
+    advance_interview_phase
 )
 
 @api_view(['POST'])
@@ -120,7 +121,11 @@ def send_message(request):
 
     session.save()
 
-    # Step 5: Decide what to do next based on what we know
+    # Step 5: Advance the interview phase based on what we now know
+    # This moves us through the clinical protocol phases
+    advance_interview_phase(session, session.severity_known, session.duration_known)
+
+    # Step 6: Decide what to do next based on what we know
     slots_complete = (
         session.reported_symptoms.exists() and
         session.severity_known and
@@ -141,19 +146,22 @@ def send_message(request):
             )
             else:
                 # Something was extracted but session hasn't updated yet
-                # Ask a focused follow-up
+                # Ask a focused follow-up using the clinical protocol
                 bot_response = generate_followup_question(
                 conversation_history=conversation_history,
-                severity_known=session.severity_known,
-                duration_known=session.duration_known
+                extracted_data=extracted,
+                current_phase=session.current_interview_phase,
+                questions_asked_in_phase=session.questions_asked_in_phase
                 )
+
 
         elif not session.severity_known or not session.duration_known:
             # We have symptoms but still need severity or duration
             bot_response = generate_followup_question(
                 conversation_history=conversation_history,
-                severity_known=session.severity_known,
-                duration_known=session.duration_known
+                extracted_data=extracted,
+                current_phase=session.current_interview_phase,
+                questions_asked_in_phase=session.questions_asked_in_phase
             )
 
         elif not session.additional_symptoms_asked:
@@ -210,7 +218,7 @@ def send_message(request):
             severity=extracted.get('severity'),
             duration=extracted.get('duration'),
             urgency=urgency,
-            rule_guidance=guidance_text,
+            guidance_text=guidance_text,
             probable_diseases=probable_diseases
         )
 
