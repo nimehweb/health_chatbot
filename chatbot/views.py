@@ -39,9 +39,14 @@ def start_chat(request):
 @api_view(['POST'])
 def send_message(request):
     """
-    Main conversation handler.
-    Uses slot-filling approach to gather symptoms, severity and duration
-    before assessing urgency and providing guidance.
+    Main conversation handler with early urgency evaluation.
+    
+    Processing Logic:
+    1. Extract symptoms from user message
+    2. Match to database and update session
+    3. Check urgency IMMEDIATELY (Safety Valve)
+    4. If Emergency/Urgent/Complete → Break and give final guidance
+    5. Otherwise → Continue interview phases
     """
     session_id = request.data.get('session_id')
     user_message = request.data.get('message', '').strip()
@@ -76,23 +81,17 @@ def send_message(request):
     )
 
     # Step 2: Build conversation history from all messages in this session
-    # This is what we pass to the LLM so it knows what has already been said
     all_messages = session.messages.all()
     conversation_history = [
         {'type': msg.message_type, 'content': msg.content}
         for msg in all_messages
     ]
 
-    # Step 3: Extract symptom information from the user's message
+    # Step 3: EXTRACT symptoms from the user's message
     extracted = extract_symptom_info(conversation_history, user_message)
 
-    # Step 4: Update the session with whatever we just learned
-
-    # Get all symptom names from our database
+    # Step 4: MATCH & UPDATE SESSION - Sync extracted terms to database terms
     all_db_symptoms = list(Symptom.objects.values_list('name', flat=True))
-
-
-    # Use LLM to intelligently match extracted symptoms to database
     matched_symptom_names = match_symptoms_to_database(
         extracted_symptoms=extracted.get('symptoms', []),
         database_symptoms=all_db_symptoms
@@ -106,12 +105,6 @@ def send_message(request):
         except Symptom.DoesNotExist:
             pass
 
-    # for symptom_name in extracted.get('symptoms', []):
-    #     # Try to find this symptom in our database (case-insensitive match)
-    #     for db_symptom in Symptom.objects.all():
-    #         if symptom_name.lower() in db_symptom.name.lower() or db_symptom.name.lower() in symptom_name.lower():
-    #             session.reported_symptoms.add(db_symptom)
-
     # Update severity and duration if we just learned them
     if extracted.get('severity_found'):
         session.severity_known = True
@@ -121,95 +114,19 @@ def send_message(request):
 
     session.save()
 
-    # Step 5: Advance the interview phase based on what we now know
-    # This moves us through the clinical protocol phases
-    advance_interview_phase(session, session.severity_known, session.duration_known)
+    # Step 5: TRIAGE CHECK (The "Safety Valve") - Check urgency after EVERY message
+    # This ensures an Emergency result breaks the interview immediately
+    urgency, guidance_text = evaluate_urgency(session.reported_symptoms.all())
+    probable_diseases = match_diseases(session.reported_symptoms.all())
 
-    # Step 6: Decide what to do next based on what we know
-    slots_complete = (
-        session.reported_symptoms.exists() and
-        session.severity_known and
-        session.duration_known and
-        session.additional_symptoms_asked
-    )
-
-    if not slots_complete:
-        # Work out specifically what is still missing
-        # so we ask in the right order
-        if not session.reported_symptoms.exists():
-            # We don't even know what symptoms they have yet
-            if not matched_symptom_names:
-                # Nothing matched - ask for more specific description
-                bot_response = generate_clarification_request(
-                conversation_history=conversation_history,
-                user_message=user_message
-            )
-            else:
-                # Something was extracted but session hasn't updated yet
-                # Ask a focused follow-up using the clinical protocol
-                bot_response = generate_followup_question(
-                conversation_history=conversation_history,
-                extracted_data=extracted,
-                current_phase=session.current_interview_phase,
-                questions_asked_in_phase=session.questions_asked_in_phase
-                )
-
-
-        elif not session.severity_known or not session.duration_known:
-            # We have symptoms but still need severity or duration
-            bot_response = generate_followup_question(
-                conversation_history=conversation_history,
-                extracted_data=extracted,
-                current_phase=session.current_interview_phase,
-                questions_asked_in_phase=session.questions_asked_in_phase
-            )
-
-        elif not session.additional_symptoms_asked:
-            # We have everything - but we haven't checked for
-            # additional symptoms yet. Ask once before assessing.
-            bot_response = generate_additional_symptoms_question(
-                conversation_history=conversation_history
-            )
-            # Mark that we have now asked this question
-            session.additional_symptoms_asked = True
-            session.save()
-
-        # Save the bot's question
-        ChatMessage.objects.create(
-            session=session,
-            message_type='bot',
-            content=bot_response
-        )
-
-        return Response({
-            'session_id': session_id,
-            'response': bot_response,
-            'stage': 'gathering',
-            'slots': {
-                'symptoms_found': session.reported_symptoms.exists(),
-                'severity_known': session.severity_known,
-                'duration_known': session.duration_known,
-                'additional_symptoms_asked': session.additional_symptoms_asked
-            }
-        })
-
-    else:
-        # All slots are filled - now we can assess and give guidance
-        session.stage = 'assessing'
-        session.save()
-
-        # Run the urgency rule engine
-        urgency, guidance_text = evaluate_urgency(session.reported_symptoms.all())
-
-        #Run disease matching
-        probable_diseases = match_diseases(session.reported_symptoms.all())
-
+    # Step 6: DECIDE - Break for Emergency/Urgent or Continue the Interview
+    if urgency in ['emergency', 'urgent'] or session.current_interview_phase == 'complete':
+        # BREAK the loop: Provide final guidance immediately
         session.current_urgency = urgency
         session.stage = 'complete'
         session.is_complete = True
         session.save()
 
-        # Generate the final empathetic guidance response
         symptoms_list = [s.name for s in session.reported_symptoms.all()]
 
         bot_response = generate_guidance(
@@ -226,8 +143,7 @@ def send_message(request):
         ChatMessage.objects.create(
             session=session,
             message_type='bot',
-            content=bot_response,
-            extracted_symptoms=symptoms_list
+            content=bot_response
         )
 
         return Response({
@@ -238,6 +154,41 @@ def send_message(request):
             'symptoms': symptoms_list,
             'probable_diseases': probable_diseases
         })
+
+    # Step 7: CONTINUE - Not an emergency, so advance interview and ask next question
+    advance_interview_phase(session, session.severity_known, session.duration_known)
+
+    # Determine the next question to ask
+    if not matched_symptom_names and not session.reported_symptoms.exists():
+        # Nothing matched - ask for more specific description
+        bot_response = generate_clarification_request(
+            conversation_history=conversation_history,
+            user_message=user_message
+        )
+    else:
+        # Generate the next smart clinical question based on the current phase
+        bot_response = generate_followup_question(
+            conversation_history=conversation_history,
+            extracted_data=extracted,
+            current_phase=session.current_interview_phase,
+            questions_asked_in_phase=session.questions_asked_in_phase
+        )
+
+    # Save the bot's question
+    ChatMessage.objects.create(
+        session=session,
+        message_type='bot',
+        content=bot_response
+    )
+
+    return Response({
+        'session_id': session_id,
+        'response': bot_response,
+        'stage': 'gathering',
+        'urgency': urgency,
+        'current_phase': session.current_interview_phase,
+        'symptoms': [s.name for s in session.reported_symptoms.all()]
+    })
 
 
 @api_view(['GET'])
