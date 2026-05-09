@@ -185,7 +185,6 @@ def send_message(request):
         'session_id': session_id,
         'response': bot_response,
         'stage': 'gathering',
-        'urgency': urgency,
         'current_phase': session.current_interview_phase,
         'symptoms': [s.name for s in session.reported_symptoms.all()]
     })
