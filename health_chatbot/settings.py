@@ -20,10 +20,14 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Railway sets the public URL as RAILWAY_PUBLIC_DOMAIN
 RAILWAY_HOST = os.environ.get('RAILWAY_PUBLIC_DOMAIN', '')
+# Render uses RENDER_EXTERNAL_HOSTNAME
+RENDER_HOST = os.environ.get('RENDER_EXTERNAL_HOSTNAME', '')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 if RAILWAY_HOST:
     ALLOWED_HOSTS.append(RAILWAY_HOST)
+if RENDER_HOST:
+    ALLOWED_HOSTS.append(RENDER_HOST)
 
 # Also allow any hosts passed in via env (useful for custom domains)
 extra_hosts = os.environ.get('ALLOWED_HOSTS', '')
